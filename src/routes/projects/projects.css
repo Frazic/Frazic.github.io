@@ -1,0 +1,277 @@
+/* CARD */
+.card-list {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  overflow: unset;
+  scroll-behavior: smooth;
+  margin-bottom: 5rem;
+
+  opacity: 0;
+  transition: all var(--transition-speed) ease;
+  animation: slideInFromTop var(--transition-speed);
+  animation-fill-mode: forwards;
+}
+
+.card {
+  font-size: 0.75em;
+  word-wrap: break-word;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 10vh;
+  width: 50vw;
+  min-width: 9rem;
+  min-height: 4rem;
+  max-width: 12rem;
+  max-height: 10rem;
+  padding: 1.5em;
+
+  border-radius: 1em;
+  background-color: var(--color-purple-dark);
+  box-shadow: -0.5em 0 1.2em #000;
+
+  transition: all var(--transition-speed) ease;
+
+  margin: 0;
+  scroll-snap-align: start;
+  clear: both;
+}
+
+.card:hover ~ .card,
+.card:active ~ .card {
+  transform: translateY(4em);
+}
+
+.card:hover,
+.card:active {
+  min-height: 8rem;
+}
+
+.card:not(:first-child) {
+  margin-top: -3em;
+}
+
+.card-header {
+  margin-bottom: auto;
+}
+
+.card-header p {
+  font-size: 1em;
+  margin: 0 0 0em;
+  color: var(--color-green-light);
+}
+
+.card-header h2 {
+  color: var(--color-purple-lightest);
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+  border: 0;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.card-header h2:hover {
+  background: linear-gradient(
+    90deg,
+    var(--color-green-light),
+    var(--color-green-lightest)
+  );
+  text-shadow: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.card-header a {
+  color: var(--color-purple-lightest);
+  text-decoration: none;
+}
+
+.card-author {
+  visibility: hidden;
+  position: relative;
+  display: grid;
+  grid-template-columns: 4em 1fr;
+  align-items: center;
+  margin: 3em 0 0;
+  font-size: 1em;
+}
+
+.card:hover .card-author,
+.card:active .card-author {
+  visibility: visible;
+}
+
+.author-avatar {
+  grid-area: auto;
+  align-self: start;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.author-avatar img {
+  display: block;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 0 0.7em 0.4em;
+}
+
+.author-name {
+  grid-area: auto;
+  box-sizing: border-box;
+}
+
+.author-name-prefix {
+  font-style: normal;
+  font-weight: 700;
+  color: var(--color-purple-light);
+}
+
+.half-circle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 3em;
+  height: 2.5em;
+  fill: none;
+  stroke: var(--color-green-mid);
+  stroke-width: 8;
+  stroke-linecap: round;
+}
+
+.tags a {
+  visibility: hidden;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.5em;
+  color: var(--color-purple-light);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.66em;
+  border: 3px solid #28242f;
+  border-radius: 2em;
+  padding: 0.2em 0.85em 0.25em;
+  position: relative;
+}
+
+.tags a:hover {
+  background: linear-gradient(
+    90deg,
+    var(--color-green-light),
+    var(--color-green-lightest)
+  );
+  text-shadow: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  border-color: var(--color-purple-lightest);
+}
+
+.card:hover .tags a,
+.card:active .tags a {
+  visibility: visible;
+}
+
+@media screen and (min-width: 601px) {
+  .card-list {
+    flex-direction: row;
+    font-size: 1.1em;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    opacity: 0;
+    animation: slideInFromLeft var(--transition-speed);
+    animation-fill-mode: forwards;
+    margin-top: 10vh;
+  }
+
+  .card {
+    height: 30vh;
+    max-height: 15rem;
+  }
+
+  .card:hover {
+    transform: translateY(-1em);
+  }
+
+  .card:hover ~ .card,
+  .card:active ~ .card {
+    transform: translateX(4em);
+  }
+
+  .card:not(:first-child) {
+    margin-top: 0;
+    margin-left: -3em;
+  }
+
+  .card-header p {
+    margin: 0 0 1rem;
+  }
+
+  .card-header h2 {
+    margin: 0.25rem 0 auto;
+  }
+
+  .card-author {
+    visibility: visible;
+  }
+
+  .tags a {
+    visibility: visible;
+    word-wrap: normal;
+  }
+
+  /* Scrollbar */
+  .card-list::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  .card-list::-webkit-scrollbar-thumb {
+    background: var(--color-purple-darkest);
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
+      inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+  }
+
+  .card-list::-webkit-scrollbar-track {
+    background: linear-gradient(
+      90deg,
+      #201c29,
+      #201c29 1px,
+      #17141d 0,
+      #17141d
+    );
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

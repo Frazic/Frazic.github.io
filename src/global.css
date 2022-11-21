@@ -1,0 +1,311 @@
+/**
+ * WHAT IS THIS FILE?
+ *
+ * Globally applied styles. No matter which components are in the page or matching route,
+ * the styles in here will be applied to the Document, without any sort of CSS scoping.
+ *
+ */
+
+:root {
+  font-size: max(20px, 1.2vw);
+
+  --navbar-width: 5rem;
+  --body-padding: 1rem;
+
+  --font-weight-light: 300;
+  --font-weight-default: 400;
+  --font-weight-mid: 500;
+  --font-weight-bold: 600;
+  --font-weight-boldest: 700;
+
+  /* Colours */
+  /* Made using https://paletton.com */
+
+  /* Purple tones */
+  --color-purple-lightest: #c3a5cb;
+  --color-purple-light: #743d83;
+  --color-purple-mid: #420e51;
+  --color-purple-dark: #23232e;
+  --color-purple-darkest: #141414;
+
+  /* Green tones */
+  --color-green-lightest: #d0eda9;
+  --color-green-light: #82ad47;
+  --color-green-mid: #477010;
+  --color-green-dark: #213900;
+  --color-green-darkest: #070c00;
+
+  --transition-speed: 200ms;
+}
+
+body {
+  background-color: var(--color-purple-darkest);
+  color: var(--color-purple-lightest);
+  font-family: "Signika", sans-serif;
+  font-weight: var(--font-weight-default);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  margin: 0;
+}
+
+section {
+  padding: 0 1rem 0 var(--body-padding);
+}
+
+h1,
+h2,
+h3,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  padding: 0 0 20px 0;
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-boldest);
+}
+
+h2 {
+  padding: 0 0 15px 0;
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-bold);
+}
+
+h3 {
+  padding: 0 0 12px 0;
+  font-size: 1.2rem;
+  font-weight: var(--font-weight-mid);
+}
+
+p {
+  padding: 0 0 5px 0;
+}
+
+a {
+  color: var(--color-purple-lightest);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 0.25rem;
+  height: 0.25rem;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+  background: #1e1e24;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+
+footer {
+  margin: auto var(--body-padding) 0 var(--body-padding);
+  padding: 15px 0px 15px 0px;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: var(--font-weight-light);
+  padding-bottom: var(--navbar-width);
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.container-centered {
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+  text-align: center;
+}
+
+.text-justified {
+  text-align: justify;
+  text-justify: auto;
+  max-width: 60ch;
+  margin-left: auto;
+  margin-right: auto;
+  word-wrap: break-word;
+}
+
+.text-centered {
+  text-align: center;
+  max-width: 60ch;
+  margin-left: auto;
+  margin-right: auto;
+  word-wrap: break-word;
+}
+
+.home-page-layout {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+  align-items: center;
+}
+
+.home-page-photo {
+  border-radius: 10%;
+  height: auto;
+  width: 65vw;
+  min-width: 300px;
+}
+
+.hero-title {
+  font-size: 10vw;
+  text-transform: uppercase;
+  line-height: 0.85em;
+  font-weight: bolder;
+}
+
+.hero-title > .staggered-character {
+  display: inline-block;
+  opacity: 0;
+  --animation-speed: 100ms;
+  transition: animation var(--animation-speed) ease-in-out;
+}
+
+.staggered-character.top {
+  animation: slideInFromTop var(--animation-speed) forwards;
+  animation-delay: calc(var(--order) * 167ms);
+}
+
+.staggered-character.bot {
+  animation: slideInFromBot var(--animation-speed) forwards;
+  animation-delay: calc(var(--order) * 125ms);
+}
+
+.descriptors {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.descriptors ul {
+  --animation-speed: 500ms;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  width: 6.3em;
+  margin: auto;
+  padding: 8px;
+  color: var(--color-green-light);
+  border-style: solid;
+  border-color: var(--color-purple-mid);
+  border-radius: 10%;
+
+  opacity: 0;
+  animation: slideInFromLeft var(--animation-speed) forwards;
+  transition: all var(--animation-speed) ease;
+  animation-delay: calc(var(--order) * var(--animation-speed));
+}
+
+.descriptors ul > svg {
+  width: 1rem;
+  min-width: 0.2rem;
+  height: auto;
+  margin: 0;
+}
+
+.descriptors ul > span {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 601px) {
+  :root {
+    --body-padding: calc(var(--navbar-width) + 1rem);
+  }
+
+  footer {
+    padding-bottom: 2rem;
+    margin: auto 0 0 var(--body-padding);
+  }
+
+  .descriptors {
+    flex-direction: row;
+  }
+
+  .descriptors ul {
+    filter: grayscale(100%) opacity(0.7);
+  }
+
+  .descriptors ul:hover {
+    filter: grayscale(0%) opacity(1);
+  }
+
+  .home-page-layout {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .home-page-layout {
+    flex-direction: row;
+  }
+
+  .home-page-photo {
+    width: 35vw;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+
+  30%,
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+
+  30% {
+    opacity: 1;
+    transform: translateY(15%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromBot {
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+
+  30%,
+  85% {
+    opacity: 1;
+    transform: translateY(-15%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
