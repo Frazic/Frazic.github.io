@@ -1,17 +1,37 @@
-import { component$ } from "@builder.io/qwik";
+import { $, component$, useClientEffect$ } from "@builder.io/qwik";
 import { DocumentHead } from "@builder.io/qwik-city";
+import p5 from "p5";
 
 export default component$(() => {
-  return (
-    <div>
-      <h1>About</h1>
+  const myp5 = $(() => new p5((sketch) => {
 
-      <p>Each little about section will be a full screen page</p>
-      <p>
-        Effects: parallax and some css animating when coming onto the page
-        (staggered)
-      </p>
-    </div>
+    const x = 100;
+    const y = 100;
+
+    sketch.setup = () => {
+      const canvas = sketch.createCanvas(200, 200);
+      canvas.parent("p5sketch");
+    };
+
+    sketch.draw = () => {
+      sketch.background(0);
+      sketch.fill(255)
+      if (sketch.mouseIsPressed) {
+        sketch.fill(100, 100, 10);
+      }
+      sketch.rect(sketch.mouseX, sketch.mouseY, 50, 50);
+      // sketch.noLoop();
+    };
+  }));
+  useClientEffect$(() => {
+    myp5();
+  })
+  return (
+    <>
+      <h1>About</h1>
+      <div id="p5sketch">
+      </div>
+    </>
   );
 });
 
