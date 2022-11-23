@@ -13,10 +13,9 @@ export const PerlinWave = $((props: PerlinWaveProps) => {
         if (!parent) return;
 
         sketch.setup = () => {
-            const canvas = sketch.createCanvas(elementWidth(parent), elementHeight(parent));
+            const canvas = sketch.createCanvas(elementWidth(parent) + 20, elementHeight(parent));
             canvas.parent(props.id);
             canvas.id("canvas" + props.id)
-            canvas.position(0, 0);
             canvas.style("position", "");
             sketch.noiseDetail(1);
         };
