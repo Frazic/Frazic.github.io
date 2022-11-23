@@ -3,6 +3,7 @@ import {
   useSignal,
   useStore,
   useStylesScoped$,
+  useWatch$,
 } from "@builder.io/qwik";
 import { DocumentHead } from "@builder.io/qwik-city";
 import styles from "./skills.css?inline";
@@ -20,10 +21,20 @@ export default component$(() => {
   const isTree2Active = useSignal(true);
   const isTree3Active = useSignal(true);
 
+  const treeIsActive = (isTree1Active.value || isTree2Active.value || isTree3Active.value);
+
   const tooltipStore = useStore<TooltipStore>({
     text: "",
     title: "",
   });
+
+  useWatch$(({ track }) => {
+    track(() => (isTree1Active.value || isTree2Active.value || isTree3Active.value));
+    if (!(isTree1Active.value || isTree2Active.value || isTree3Active.value)) {
+      tooltipStore.text = "";
+      tooltipStore.title = "";
+    }
+  })
 
   return (
     <>
@@ -32,7 +43,7 @@ export default component$(() => {
 @media screen and (min-width:1024px){\
 footer {\
     transform: translateY(" +
-          (isTree1Active.value || isTree2Active.value || isTree3Active.value
+          (treeIsActive
             ? "0"
             : "-15em") +
           ");\
@@ -51,22 +62,30 @@ footer {\
                 isTree1Active.value = !isTree1Active.value;
               }}
             >
-              Tree 1
+              Front-End
             </h2>
             <TalentColumn
               isActive={isTree1Active.value}
               items={[
-                { name: "Talent 1", iconClass: "fa-solid fa-camera" },
-                { name: "Talent 2", iconClass: "fa-solid fa-camera" },
-                { name: "Talent 3", iconClass: "fa-solid fa-camera" },
+                { name: "JS" },
+                { name: "link" },
+                { name: "React" },
+                { name: "link" },
+                { name: "Next" },
+                { name: "link" },
+                { name: "Qwik" },
               ]}
             />
             <TalentColumn
               isActive={isTree1Active.value}
               items={[
-                { name: "Talent 1", iconClass: "fa-solid fa-camera" },
-                { name: "Talent 2", iconClass: "fa-solid fa-camera" },
-                { name: "Talent 3", iconClass: "fa-solid fa-camera" },
+                { name: "Razor" },
+                { name: "space" },
+                { name: "PHP" },
+                { name: "space" },
+                { name: "HTML" },
+                { name: "link" },
+                { name: "CSS" },
               ]}
             />
           </div>
@@ -81,41 +100,30 @@ footer {\
                 isTree2Active.value = !isTree2Active.value;
               }}
             >
-              Tree 2
+              Back-End
             </h2>
             <TalentColumn
               isActive={isTree2Active.value}
               tooltipStore={tooltipStore}
               items={[
-                {
-                  name: "Talent 1",
-                  iconClass: "fa-solid fa-camera",
-                  tooltip: "Description of talent 1",
-                },
-                { name: "link" },
-                {
-                  name: "Talent 2",
-                  iconClass: "fa-solid fa-camera",
-                  tooltip: "Longer description of talent 2",
-                },
+                { name: "Python" },
                 { name: "space" },
-                {
-                  name: "Talent 3",
-                  iconClass: "fa-solid fa-camera",
-                  tooltip:
-                    "Much much longer description of talent 3 that goes into too much details to fit into a reasonable tooltip that is easy to understand",
-                },
+                { name: "SQL" },
+                { name: "space" },
+                { name: "Bash" },
+                { name: "space" },
+                { name: "Java" },
               ]}
             />
             <TalentColumn
               isActive={isTree2Active.value}
               tooltipStore={tooltipStore}
               items={[
-                { name: "Talent 1", iconClass: "fa-solid fa-camera" },
-                { name: "empty" },
-                { name: "Talent 2", iconClass: "fa-solid fa-camera" },
+                { name: "C" },
                 { name: "link" },
-                { name: "Talent 3", iconClass: "fa-solid fa-camera" },
+                { name: "C++" },
+                { name: "link" },
+                { name: "C#" },
               ]}
             />
           </div>
@@ -130,22 +138,30 @@ footer {\
                 isTree3Active.value = !isTree3Active.value;
               }}
             >
-              Tree 3
+              Extras
             </h2>
             <TalentColumn
               isActive={isTree3Active.value}
               items={[
-                { name: "Talent 1", iconClass: "fa-solid fa-camera" },
-                { name: "Talent 2", iconClass: "fa-solid fa-camera" },
-                { name: "Talent 3", iconClass: "fa-solid fa-camera" },
+                { name: "CAD" },
+                { name: "space" },
+                { name: "FPGA" },
+                { name: "space" },
+                { name: "Linux" },
+                { name: "link" },
+                { name: "RPi" },
               ]}
             />
             <TalentColumn
               isActive={isTree3Active.value}
               items={[
-                { name: "Talent 1", iconClass: "fa-solid fa-camera" },
-                { name: "Talent 2", iconClass: "fa-solid fa-camera" },
-                { name: "Talent 3", iconClass: "fa-solid fa-camera" },
+                { name: "Electronics" },
+                { name: "link" },
+                { name: "Arduino" },
+                { name: "link" },
+                { name: "XBee" },
+                { name: "space" },
+                { name: "Network" },
               ]}
             />
           </div>
@@ -156,12 +172,12 @@ footer {\
         className={
           "tooltip" +
           (tooltipStore.text != "" &&
-            (isTree1Active.value || isTree2Active.value || isTree3Active.value)
+            treeIsActive
             ? " active"
             : "")
         }
         style={
-          isTree1Active.value || isTree2Active.value || isTree3Active.value
+          treeIsActive
             ? {}
             : { opacity: "0" }
         }

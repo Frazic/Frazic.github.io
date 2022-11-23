@@ -7,7 +7,6 @@ export interface TalentColumnProps {
   tooltipStore?: TooltipStore;
   items: {
     name: string;
-    iconClass?: string;
     tooltip?: string;
   }[];
 }
@@ -29,7 +28,9 @@ export const TalentColumn = component$((props: TalentColumnProps) => {
             <>
               <div
                 style={{ "--order": order }}
-                className={props.isActive ? "talent-link active" : "talent-link"}
+                className={
+                  props.isActive ? "talent-link active" : "talent-link"
+                }
               >
                 <div className="link-line"></div>
               </div>
@@ -82,7 +83,9 @@ export const TalentColumn = component$((props: TalentColumnProps) => {
 
   return (
     <>
-      <div className={props.isActive ? "talent-column active" : "talent-column"}>
+      <div
+        className={props.isActive ? "talent-column active" : "talent-column"}
+      >
         {createItems$()}
       </div>
     </>
