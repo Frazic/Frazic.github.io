@@ -313,7 +313,7 @@ export default component$(() => {
         </li>
 
         {/* LINKS */}
-        <li class="nav-item">
+        {/* <li class="nav-item">
           <a href="/links" class="nav-link">
             <svg
               aria-hidden="true"
@@ -322,7 +322,7 @@ export default component$(() => {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 128 128"
             >
-              {/* Chain filling */}
+              Chain filling
               <g id="background">
                 <g id="g444" style="display:inline">
                   <path
@@ -345,7 +345,8 @@ export default component$(() => {
                   />
                 </g>
               </g>
-              {/* Splashes of light on the outside */}
+
+              Splashes of light on the outside
               <g>
                 <rect
                   className="svg-colour-tertiary"
@@ -416,7 +417,7 @@ export default component$(() => {
                 />
               </g>
 
-              {/* 1/4 circles before light splashes */}
+              1/4 circles before light splashes
               <g>
                 <path
                   className="svg-colour-secondary"
@@ -430,9 +431,9 @@ export default component$(() => {
                 />
               </g>
 
-              {/* Main chain link */}
+              Main chain link
               <g>
-                {/* Small curves at angles between straight chain bits */}
+                Small curves at angles between straight chain bits
                 <g>
                   <path
                     className="svg-colour-secondary"
@@ -511,7 +512,7 @@ export default component$(() => {
                 />
               </g>
 
-              {/* Middle chain link */}
+              Middle chain link
               <g>
                 <path
                   className="svg-colour-secondary"
@@ -526,7 +527,7 @@ export default component$(() => {
             </svg>
             <span class="link-text">Links</span>
           </a>
-        </li>
+        </li> */}
 
         {/* FLOWER
                 <li class="nav-item">
