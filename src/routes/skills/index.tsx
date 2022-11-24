@@ -68,7 +68,7 @@ footer {\
               isActive={isTree1Active.value}
               tooltipStore={tooltipStore}
               items={[
-                { name: "JS", tooltip: "", iconSrc: "icons/javascript.png" },
+                { name: "JavaScript", tooltip: "", iconSrc: "icons/javascript.png" },
                 { name: "link" },
                 { name: "React", tooltip: "", iconSrc: "icons/react.png" },
                 { name: "link" },

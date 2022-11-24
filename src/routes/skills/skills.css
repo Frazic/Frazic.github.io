@@ -42,6 +42,8 @@
   justify-content: center;
   text-transform: uppercase;
 
+  font-size: 2vw;
+
   background: var(--color-purple-dark);
   box-shadow: 0 6px 0px 0px rgb(0 0 0 / 50%), 0px 20px 20px 0px rgb(0 0 0 / 20%);
   border-radius: 1em;
@@ -75,6 +77,8 @@
   padding: 0.5em;
   width: 80%;
 
+  font-size: 1.2vw;
+
   position: relative;
 
   animation: fadeOut calc(var(--order) * var(--items-transition-speed)) forwards;
@@ -86,8 +90,7 @@
 
 .talent-column > .talent-item.active:hover,
 .talent-item.active:active,
-.talent-item.active:focus,
-.talent-item.clicked {
+.talent-item.active:focus {
   background: var(--color-purple-mid);
   cursor: help;
 }
@@ -118,8 +121,9 @@
 
 .talent-item > img {
   grid-column: 1;
-  width: 32px;
-  height: 32px;
+  width: 2vw;
+  max-width: 32px;
+  aspect-ratio: 1;
   margin-left: auto;
   margin-right: 0.5em;
 }
@@ -208,6 +212,18 @@
 
   .talent-grid > .talent-column.active {
     display: flex;
+  }
+
+  .talent-grid > .talent-header {
+    font-size: 4vw;
+  }
+
+  .talent-column > .talent-item {
+    font-size: 2.5vw;
+  }
+
+  .talent-item > img {
+    width: 4.5vw;
   }
 
   .tooltip {

@@ -166,10 +166,6 @@
     justify-content: center;
   }
 
-  .nav-item:last-child {
-    margin-bottom: 50%;
-  }
-
   main {
     margin: 0;
   }
