@@ -11,7 +11,6 @@ export const RouterHead = component$(() => {
   return (
     <>
       <title>{head.title}</title>
-      {/* <base href="/portfolio/" /> */}
       <link rel="canonical" href={loc.href} />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta http-equiv="Cache-control" content="no-cache"></meta>

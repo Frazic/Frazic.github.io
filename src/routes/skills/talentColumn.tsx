@@ -121,9 +121,10 @@ export const TalentItem = component$((props: TalentItemProps) => {
   });
 
   const getStyle = () => {
-    if (props.background) return { "--order": props.order, "background-color": props.background };
+    if (props.background)
+      return { "--order": props.order, "background-color": props.background };
     else return { "--order": props.order };
-  }
+  };
 
   return (
     <>
@@ -132,7 +133,12 @@ export const TalentItem = component$((props: TalentItemProps) => {
         className={props.isActive ? "talent-item active" : "talent-item"}
         onClick$={onClickItem$}
       >
-        {props.iconSrc && <img src={props.iconSrc} alt={props.iconSrc.split("/").at(-1)?.split(".").at(0)} />}
+        {props.iconSrc && (
+          <img
+            src={props.iconSrc}
+            alt={props.iconSrc.split("/").at(-1)?.split(".").at(0)}
+          />
+        )}
         <span>{props.name}</span>
       </div>
     </>

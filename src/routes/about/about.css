@@ -1,28 +1,28 @@
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 section {
-    padding-right: 0;
+  padding-right: 0;
 }
 
 section.background {
-    padding: 0 0 0 var(--body-padding);
-    margin-left: calc(-1*var(--body-padding));
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-clip: border-box;
-    background-size: cover;
-    height: 100vh;
+  padding: 0 0 0 var(--body-padding);
+  margin-left: calc(-1 * var(--body-padding));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-clip: border-box;
+  background-size: cover;
+  height: 100vh;
 }
 
 .photo-credit {
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.445);
-    text-transform: lowercase;
-    text-align: right;
-    font-size: x-small;
-    font-style: italic;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.445);
+  text-transform: lowercase;
+  text-align: right;
+  font-size: x-small;
+  font-style: italic;
 
-    margin-right: 1em;
+  margin-right: 1em;
 }
