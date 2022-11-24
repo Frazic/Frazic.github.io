@@ -121,9 +121,9 @@ export default component$(() => {
         className="home-page-photo"
         src="josh-photo.webp"
         alt="Picture of Joshua Bruylant"
-      // loading="lazy"
+        // loading="lazy"
       />
-    </div >
+    </div>
   );
 });
 
