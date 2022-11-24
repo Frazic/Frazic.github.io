@@ -68,26 +68,26 @@ footer {\
               isActive={isTree1Active.value}
               tooltipStore={tooltipStore}
               items={[
-                { name: "JS", tooltip: "", iconSrc: "" },
+                { name: "JS", tooltip: "", iconSrc: "icons/javascript.png" },
                 { name: "link" },
-                { name: "React", tooltip: "", iconSrc: "" },
+                { name: "React", tooltip: "", iconSrc: "icons/react.png" },
                 { name: "link" },
-                { name: "Next", tooltip: "", iconSrc: "" },
+                { name: "Next", tooltip: "", iconSrc: "icons/next-js.png" },
                 { name: "link" },
-                { name: "Qwik", tooltip: "", iconSrc: "" },
+                { name: "Qwik", tooltip: "", iconSrc: "icons/qwik.svg" },
               ]}
             />
             <TalentColumn
               isActive={isTree1Active.value}
               tooltipStore={tooltipStore}
               items={[
-                { name: "Razor", tooltip: "", iconSrc: "" },
+                { name: "ASP.NET", tooltip: "", iconSrc: "icons/asp-net.png" },
                 { name: "space" },
-                { name: "PHP", tooltip: "", iconSrc: "" },
+                { name: "PHP", tooltip: "", iconSrc: "icons/php.png" },
                 { name: "space" },
-                { name: "HTML", tooltip: "", iconSrc: "" },
+                { name: "HTML", tooltip: "", iconSrc: "icons/html.png" },
                 { name: "link" },
-                { name: "CSS", tooltip: "", iconSrc: "" },
+                { name: "CSS", tooltip: "", iconSrc: "icons/css.png" },
               ]}
             />
           </div>
@@ -108,24 +108,24 @@ footer {\
               isActive={isTree2Active.value}
               tooltipStore={tooltipStore}
               items={[
-                { name: "Python", tooltip: "", iconSrc: "" },
+                { name: "Python", tooltip: "", iconSrc: "icons/python.png" },
                 { name: "space" },
-                { name: "SQL", tooltip: "", iconSrc: "" },
+                { name: "SQL", tooltip: "", iconSrc: "icons/sql.png" },
                 { name: "space" },
-                { name: "Bash", tooltip: "", iconSrc: "" },
+                { name: "Bash", tooltip: "", iconSrc: "icons/bash.png" },
                 { name: "space" },
-                { name: "Java", tooltip: "", iconSrc: "" },
+                { name: "Java", tooltip: "", iconSrc: "icons/java.png" },
               ]}
             />
             <TalentColumn
               isActive={isTree2Active.value}
               tooltipStore={tooltipStore}
               items={[
-                { name: "C", tooltip: "", iconSrc: "" },
+                { name: "C", tooltip: "", iconSrc: "icons/c.png" },
                 { name: "link" },
-                { name: "C++", tooltip: "", iconSrc: "" },
+                { name: "C++", tooltip: "", iconSrc: "icons/c++.png" },
                 { name: "link" },
-                { name: "C#", tooltip: "", iconSrc: "" },
+                { name: "C#", tooltip: "", iconSrc: "icons/csharp.png" },
               ]}
             />
           </div>
@@ -146,26 +146,26 @@ footer {\
               isActive={isTree3Active.value}
               tooltipStore={tooltipStore}
               items={[
-                { name: "CAD", tooltip: "", iconSrc: "" },
+                { name: "CAD", tooltip: "", iconSrc: "icons/solidworks.png" },
                 { name: "space" },
-                { name: "FPGA", tooltip: "", iconSrc: "" },
-                { name: "space" },
-                { name: "Linux", tooltip: "", iconSrc: "" },
+                { name: "Linux", tooltip: "", iconSrc: "icons/linux.png" },
                 { name: "link" },
-                { name: "RPi", tooltip: "", iconSrc: "" },
+                { name: "Git", tooltip: "", iconSrc: "icons/github.png" },
+                { name: "link" },
+                { name: "RPi", tooltip: "", iconSrc: "icons/raspberry-pi.png" },
               ]}
             />
             <TalentColumn
               isActive={isTree3Active.value}
               tooltipStore={tooltipStore}
               items={[
-                { name: "Electronics", tooltip: "", iconSrc: "" },
+                { name: "Electronics", tooltip: "", iconSrc: "icons/electronics.png", background: "" },
                 { name: "link" },
-                { name: "Arduino", tooltip: "", iconSrc: "" },
+                { name: "Arduino", tooltip: "", iconSrc: "icons/arduino.png" },
                 { name: "link" },
-                { name: "XBee", tooltip: "", iconSrc: "" },
+                { name: "Radio", tooltip: "", iconSrc: "icons/radio.png" },
                 { name: "space" },
-                { name: "Network", tooltip: "", iconSrc: "" },
+                { name: "Network", tooltip: "", iconSrc: "icons/network.png" },
               ]}
             />
           </div>

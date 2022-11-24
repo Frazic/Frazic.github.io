@@ -9,6 +9,7 @@ export interface TalentColumnProps {
     name: string;
     tooltip?: string;
     iconSrc?: string;
+    background?: string;
   }[];
 }
 
@@ -74,6 +75,7 @@ export const TalentColumn = component$((props: TalentColumnProps) => {
               tooltip={item.tooltip}
               tooltipStore={props.tooltipStore}
               iconSrc={item.iconSrc}
+              background={item.background}
             />
           );
           break;
@@ -100,6 +102,7 @@ interface TalentItemProps {
   iconSrc?: string;
   tooltip?: string;
   tooltipStore?: TooltipStore;
+  background?: string;
 }
 
 export const TalentItem = component$((props: TalentItemProps) => {
@@ -117,14 +120,19 @@ export const TalentItem = component$((props: TalentItemProps) => {
     }
   });
 
+  const getStyle = () => {
+    if (props.background) return { "--order": props.order, "background-color": props.background };
+    else return { "--order": props.order };
+  }
+
   return (
     <>
       <div
-        style={{ "--order": props.order }}
+        style={getStyle()}
         className={props.isActive ? "talent-item active" : "talent-item"}
         onClick$={onClickItem$}
       >
-        {props.iconSrc && <img src={props.iconSrc} alt={props.iconSrc.split("/").at(-1)} />}
+        {props.iconSrc && <img src={props.iconSrc} alt={props.iconSrc.split("/").at(-1)?.split(".").at(0)} />}
         <span>{props.name}</span>
       </div>
     </>

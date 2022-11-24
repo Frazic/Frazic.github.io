@@ -26,6 +26,7 @@ export const RouterHead = component$(() => {
       <meta property="og:site_name" content="Joshua Bruylant's Portfolio" />
       {/* <meta name="twitter:site" content="@Frazic" /> */}
       {/* <meta name="twitter:title" content="Frazic" /> */}
+      <meta property="icons" content="Icons by Icons8 (https://icons8.com)" />
 
       {head.meta.map((m) => (
         <meta {...m} />
