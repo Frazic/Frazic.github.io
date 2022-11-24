@@ -207,8 +207,9 @@ hr {
 .descriptors {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5vw;
   padding-top: 1em;
+  justify-content: center;
 }
 
 .descriptors ul {
@@ -223,6 +224,7 @@ hr {
   border-style: solid;
   border-color: var(--color-purple-mid);
   border-radius: 10%;
+  cursor: crosshair;
 
   opacity: 0;
   animation: slideInFromLeft var(--animation-speed) forwards;
@@ -337,4 +339,17 @@ hr {
   100% {
     opacity: 1;
   }
+}
+
+.confetti-item {
+  width: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10px;
+}
+.confetti {
+  position: fixed;
+  top: 0;
+  left: 0;
 }
