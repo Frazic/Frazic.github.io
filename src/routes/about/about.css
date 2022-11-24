@@ -1,0 +1,54 @@
+main {
+    overflow: hidden;
+}
+
+section.about {
+    width: 100vw;
+    height: 110vh;
+    /* background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-clip: padding-box;
+    background-size: cover; */
+    padding: 0;
+    overflow: hidden;
+    margin-left: calc(-1 * var(--body-padding));
+    margin-right: -1rem;
+
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 1fr;
+    z-index: 10;
+}
+
+section.about > * {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+}
+
+section.about > p {
+    margin-left: var(--body-padding);
+}
+
+section.about > .text-center {
+    max-width: 60ch;
+    min-width: 15ch;
+    margin: 0 auto;
+}
+
+section > canvas {
+    position: relative;
+    top: 0px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+section.fixed > canvas {
+    position: fixed;
+}
+
+@media screen and (max-width: 601px) {
+    section.about {
+        margin-left: -20px;
+    }
+}
