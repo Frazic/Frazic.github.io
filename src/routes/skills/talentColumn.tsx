@@ -8,6 +8,7 @@ export interface TalentColumnProps {
   items: {
     name: string;
     tooltip?: string;
+    iconSrc?: string;
   }[];
 }
 
@@ -70,9 +71,9 @@ export const TalentColumn = component$((props: TalentColumnProps) => {
               name={item.name}
               order={order}
               isActive={props.isActive}
-              iconClass={item.iconClass}
               tooltip={item.tooltip}
               tooltipStore={props.tooltipStore}
+              iconSrc={item.iconSrc}
             />
           );
           break;
@@ -96,7 +97,7 @@ interface TalentItemProps {
   name: string;
   order: number;
   isActive: boolean;
-  iconClass?: string;
+  iconSrc?: string;
   tooltip?: string;
   tooltipStore?: TooltipStore;
 }
@@ -106,14 +107,9 @@ export const TalentItem = component$((props: TalentItemProps) => {
 
   const onClickItem$ = $(() => {
     if (props.tooltipStore) {
-      if (props.tooltip) {
-        if (props.tooltipStore.text != props.tooltip) {
-          props.tooltipStore.text = props.tooltip;
-          props.tooltipStore.title = props.name;
-        } else {
-          props.tooltipStore.text = "";
-          props.tooltipStore.title = "";
-        }
+      if (props.tooltipStore.title != props.name) {
+        props.tooltipStore.text = props.tooltip ? props.tooltip : "";
+        props.tooltipStore.title = props.name;
       } else {
         props.tooltipStore.text = "";
         props.tooltipStore.title = "";
@@ -128,9 +124,7 @@ export const TalentItem = component$((props: TalentItemProps) => {
         className={props.isActive ? "talent-item active" : "talent-item"}
         onClick$={onClickItem$}
       >
-        {
-          props.iconClass && <i class={props.iconClass + ""}></i> // For some reason withtout the "" this causes Qwik to crash
-        }
+        {props.iconSrc && <img src={props.iconSrc} alt={props.iconSrc.split("/").at(-1)} />}
         <span>{props.name}</span>
       </div>
     </>

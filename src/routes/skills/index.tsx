@@ -66,26 +66,28 @@ footer {\
             </h2>
             <TalentColumn
               isActive={isTree1Active.value}
+              tooltipStore={tooltipStore}
               items={[
-                { name: "JS" },
+                { name: "JS", tooltip: "", iconSrc: "" },
                 { name: "link" },
-                { name: "React" },
+                { name: "React", tooltip: "", iconSrc: "" },
                 { name: "link" },
-                { name: "Next" },
+                { name: "Next", tooltip: "", iconSrc: "" },
                 { name: "link" },
-                { name: "Qwik" },
+                { name: "Qwik", tooltip: "", iconSrc: "" },
               ]}
             />
             <TalentColumn
               isActive={isTree1Active.value}
+              tooltipStore={tooltipStore}
               items={[
-                { name: "Razor" },
+                { name: "Razor", tooltip: "", iconSrc: "" },
                 { name: "space" },
-                { name: "PHP" },
+                { name: "PHP", tooltip: "", iconSrc: "" },
                 { name: "space" },
-                { name: "HTML" },
+                { name: "HTML", tooltip: "", iconSrc: "" },
                 { name: "link" },
-                { name: "CSS" },
+                { name: "CSS", tooltip: "", iconSrc: "" },
               ]}
             />
           </div>
@@ -106,24 +108,24 @@ footer {\
               isActive={isTree2Active.value}
               tooltipStore={tooltipStore}
               items={[
-                { name: "Python" },
+                { name: "Python", tooltip: "", iconSrc: "" },
                 { name: "space" },
-                { name: "SQL" },
+                { name: "SQL", tooltip: "", iconSrc: "" },
                 { name: "space" },
-                { name: "Bash" },
+                { name: "Bash", tooltip: "", iconSrc: "" },
                 { name: "space" },
-                { name: "Java" },
+                { name: "Java", tooltip: "", iconSrc: "" },
               ]}
             />
             <TalentColumn
               isActive={isTree2Active.value}
               tooltipStore={tooltipStore}
               items={[
-                { name: "C" },
+                { name: "C", tooltip: "", iconSrc: "" },
                 { name: "link" },
-                { name: "C++" },
+                { name: "C++", tooltip: "", iconSrc: "" },
                 { name: "link" },
-                { name: "C#" },
+                { name: "C#", tooltip: "", iconSrc: "" },
               ]}
             />
           </div>
@@ -142,26 +144,28 @@ footer {\
             </h2>
             <TalentColumn
               isActive={isTree3Active.value}
+              tooltipStore={tooltipStore}
               items={[
-                { name: "CAD" },
+                { name: "CAD", tooltip: "", iconSrc: "" },
                 { name: "space" },
-                { name: "FPGA" },
+                { name: "FPGA", tooltip: "", iconSrc: "" },
                 { name: "space" },
-                { name: "Linux" },
+                { name: "Linux", tooltip: "", iconSrc: "" },
                 { name: "link" },
-                { name: "RPi" },
+                { name: "RPi", tooltip: "", iconSrc: "" },
               ]}
             />
             <TalentColumn
               isActive={isTree3Active.value}
+              tooltipStore={tooltipStore}
               items={[
-                { name: "Electronics" },
+                { name: "Electronics", tooltip: "", iconSrc: "" },
                 { name: "link" },
-                { name: "Arduino" },
+                { name: "Arduino", tooltip: "", iconSrc: "" },
                 { name: "link" },
-                { name: "XBee" },
+                { name: "XBee", tooltip: "", iconSrc: "" },
                 { name: "space" },
-                { name: "Network" },
+                { name: "Network", tooltip: "", iconSrc: "" },
               ]}
             />
           </div>
@@ -171,7 +175,7 @@ footer {\
       <h4
         className={
           "tooltip" +
-          (tooltipStore.text != "" &&
+          (tooltipStore.title != "" &&
             treeIsActive
             ? " active"
             : "")
