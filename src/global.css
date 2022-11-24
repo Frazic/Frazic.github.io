@@ -190,10 +190,25 @@ footer img {
   animation-delay: calc(var(--order) * 125ms);
 }
 
+.subtitle {
+  font-size: 8vmin;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+  animation-delay: 1s;
+}
+
+hr {
+  border: 1px solid var(--color-green-light);
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+  animation-delay: 1s;
+}
+
 .descriptors {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding-top: 1em;
 }
 
 .descriptors ul {
@@ -312,5 +327,14 @@ footer img {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

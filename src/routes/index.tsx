@@ -29,6 +29,10 @@ export default component$(() => {
           })}
         </div>
 
+        <hr />
+
+        <div className="subtitle">Frazic</div>
+
         <div className="text-centered">
           <li className="descriptors">
             <ul style={"--order: 1"}>
