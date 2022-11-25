@@ -30,7 +30,6 @@ export default component$(() => {
               Frazic
             </div>
           </div>
-
           <div className="tags">
             <a href="#">birth</a>
             <a href="#">lift</a>

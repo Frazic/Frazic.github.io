@@ -92,7 +92,8 @@
 .talent-column > .talent-item.active:hover,
 .talent-item.active:active,
 .talent-item.active:focus {
-  background: var(--color-purple-mid);
+  /* background: var(--color-purple-mid); */
+  box-shadow: 0px 0px 15px 4px var(--color-purple-light);
   cursor: help;
 }
 

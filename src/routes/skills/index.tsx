@@ -58,7 +58,9 @@ footer {\
         >
           <div className="talent-grid">
             <h2
+              tabIndex={0}
               className="talent-header"
+              onKeyPress$={(e) => { if (e.key === "Enter" || e.key === " ") isTree1Active.value = !isTree1Active.value }}
               onClick$={() => {
                 isTree1Active.value = !isTree1Active.value;
               }}
@@ -138,7 +140,9 @@ footer {\
         >
           <div className="talent-grid">
             <h2
+              tabIndex={0}
               className="talent-header"
+              onKeyPress$={(e) => { if (e.key === "Enter" || e.key === " ") isTree2Active.value = !isTree2Active.value }}
               onClick$={() => {
                 isTree2Active.value = !isTree2Active.value;
               }}
@@ -198,7 +202,7 @@ footer {\
                 { name: "link" },
                 {
                   name: "C#",
-                  tooltip: "Pronounced C-Sharp, this general purpose language was designed to be simple, modern and encompass import software-engineering concepts not present in C/C++.",
+                  tooltip: "Pronounced C-Sharp, this general purpose language was designed to be simple, modern and encompass important software-engineering concepts not present in C/C++.",
                   iconSrc: "/icons/csharp.png",
                   background: "#745A0F",
                 },
@@ -211,7 +215,9 @@ footer {\
         >
           <div className="talent-grid">
             <h2
+              tabIndex={0}
               className="talent-header"
+              onKeyPress$={(e) => { if (e.key === "Enter" || e.key === " ") isTree3Active.value = !isTree3Active.value }}
               onClick$={() => {
                 isTree3Active.value = !isTree3Active.value;
               }}
@@ -271,14 +277,14 @@ footer {\
                 { name: "link" },
                 {
                   name: "Radio",
-                  tooltip: "With the Arduino and the RPi came the desire to learn how to communicate between two separate systems. I first built a custom FM Radio Emitter and then used XBee chips for medium-range communication in my projects.",
+                  tooltip: "With the Arduino and the RPi came the desire to learn how to communicate between two separate systems. I first built a custom FM Radio emitter and then used XBee chips for medium-range interaction in my projects.",
                   iconSrc: "/icons/radio.png",
                   background: "#0D354A",
                 },
                 { name: "space" },
                 {
                   name: "Network",
-                  tooltip: "All throughout my studies and work it has been very useful to have an understanding of how networks function. Local or worldwide, understanding this is always handy.",
+                  tooltip: "All throughout my studies and work it has been very useful to have an understanding of how networks function. Local or worldwide, this knowledge is always handy.",
                   iconSrc: "/icons/network.png",
                   background: "#0A4565",
                 },

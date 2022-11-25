@@ -129,6 +129,7 @@ export const TalentItem = component$((props: TalentItemProps) => {
   return (
     <>
       <div
+        tabIndex={0}
         style={getStyle()}
         className={props.isActive ? "talent-item active" : "talent-item"}
         onClick$={onClickItem$}
