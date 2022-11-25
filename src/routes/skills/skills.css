@@ -1,7 +1,7 @@
 .tree-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  --items-transition-speed: 300ms;
+  --items-transition-speed: 200ms;
 
   --item-height: 1.25em;
   --spacing-height: 0.75em;
@@ -82,7 +82,7 @@
 
   position: relative;
 
-  animation: fadeOut calc(var(--order) * var(--items-transition-speed)) forwards;
+  animation: fadeOut calc(calc(var(--order) / 2) * var(--items-transition-speed)) forwards;
   background: var(--color-purple-dark);
   border-radius: 0.5em;
   height: var(--item-height);
