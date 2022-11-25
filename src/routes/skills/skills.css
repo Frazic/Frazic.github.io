@@ -82,7 +82,8 @@
 
   position: relative;
 
-  animation: fadeOut calc(calc(var(--order) / 2) * var(--items-transition-speed)) forwards;
+  animation: fadeOut
+    calc(calc(var(--order) / 2) * var(--items-transition-speed)) forwards;
   background: var(--color-purple-dark);
   border-radius: 0.5em;
   height: var(--item-height);
