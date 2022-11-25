@@ -145,6 +145,12 @@ section.background {
   grid-column: 1 / -1;
   grid-row: 1;
   text-align: center;
+
+  background-color: var(--color-purple-dark-transparent);
+  margin: 0 auto 1em;
+  width: 40%;
+  padding: 0.5em 1em;
+  border-radius: 0.25em;
 }
 
 .work-grid-container > .col-1 {
