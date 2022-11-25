@@ -12,6 +12,13 @@ export default component$(() => {
         style={{ "background-image": "url('/about-img/hebros.webp')" }}
       >
         <h1 className="box-title">About</h1>
+      </section>
+
+      <section
+        id="work"
+        className="background"
+        style={{ "background-image": "url('/about-img/TODO_NAME.webp')" }}
+      >
         <div className="container-flex">
           <div className="text-flex">
             <h2 className="header">🧐 Studies</h2>
@@ -74,9 +81,8 @@ export default component$(() => {
       </section>
 
       <section
-        id="work"
         className="background"
-        style={{ "background-image": "url('/about-img/TODO_NAME.webp')" }}
+        style={{ "background-image": "url('/about-img/Amethyst_Nations.webp')" }}
       >
         <div className="work-grid-container">
           <h2 className="title">🚀 Work</h2>
@@ -93,15 +99,70 @@ export default component$(() => {
                 </ul>
               </div>
             </div>
+            <div className="item">
+              <div className="company-logo"><img src="/about-img/dog.webp"></img></div>
+              <div className="text-container">
+                <div className="company-name">Company Name</div>
+                <div className="role">Role</div>
+                <ul>
+                  <li>Function 1</li>
+                  <li>Function 2</li>
+                  <li>Function 3</li>
+                </ul>
+              </div>
+            </div>
+            <div className="item">
+              <div className="company-logo"><img src="/about-img/dog.webp"></img></div>
+              <div className="text-container">
+                <div className="company-name">Company Name</div>
+                <div className="role">Role</div>
+                <ul>
+                  <li>Function 1</li>
+                  <li>Function 2</li>
+                  <li>Function 3</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div className="col col-2"></div>
+          <div className="col col-2">
+            <div className="item">
+              <div className="company-logo"><img src="/about-img/dog.webp"></img></div>
+              <div className="text-container">
+                <div className="company-name">Company Name</div>
+                <div className="role">Role</div>
+                <ul>
+                  <li>Function 1</li>
+                  <li>Function 2</li>
+                  <li>Function 3</li>
+                </ul>
+              </div>
+            </div>
+            <div className="item">
+              <div className="company-logo"><img src="/about-img/dog.webp"></img></div>
+              <div className="text-container">
+                <div className="company-name">Company Name</div>
+                <div className="role">Role</div>
+                <ul>
+                  <li>Function 1</li>
+                  <li>Function 2</li>
+                  <li>Function 3</li>
+                </ul>
+              </div>
+            </div>
+            <div className="item">
+              <div className="company-logo"><img src="/about-img/dog.webp"></img></div>
+              <div className="text-container">
+                <div className="company-name">Company Name</div>
+                <div className="role">Role</div>
+                <ul>
+                  <li>Function 1</li>
+                  <li>Function 2</li>
+                  <li>Function 3</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
-
-      <section
-        className="background"
-        style={{ "background-image": "url('/about-img/Amethyst_Nations.webp')" }}
-      >
       </section>
     </>
   );
