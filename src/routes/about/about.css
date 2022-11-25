@@ -13,6 +13,7 @@ section.background {
   background-attachment: fixed;
   background-clip: border-box;
   background-size: cover;
+  background-position: center;
   height: 100vh;
 }
 
