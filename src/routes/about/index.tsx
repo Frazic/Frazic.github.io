@@ -7,15 +7,15 @@ export default component$(() => {
   return (
     <>
       <section
+        id="studies"
         className="background"
         style={{ "background-image": "url('/about-img/hebros.webp')" }}
       >
         <h1 className="box-title">About</h1>
         <div className="container-flex">
           <div className="text-flex">
-            <h2 className="header">🚀 Journey</h2>
+            <h2 className="header">🧐 Studies</h2>
             <div className="text-box">
-              <h3>🧐 <b>Studies</b></h3>
               I am grateful to have lived and studied in France, which allowed me to explore my needs and desires as I went through my journey to obtaining an Engineering Degree in Embedded Systems.
               <br />
               <br />
@@ -72,11 +72,32 @@ export default component$(() => {
           <img className="img-shadow" src="/about-img/mountains.webp" alt="" />
         </div>
       </section>
+
       <section
+        id="work"
         className="background"
         style={{ "background-image": "url('/about-img/TODO_NAME.webp')" }}
       >
+        <div className="work-grid-container">
+          <h2 className="title">🚀 Work</h2>
+          <div className="col col-1">
+            <div className="item">
+              <div className="company-logo"><img src="/about-img/dog.webp"></img></div>
+              <div className="text-container">
+                <div className="company-name">Company Name</div>
+                <div className="role">Role</div>
+                <ul>
+                  <li>Function 1</li>
+                  <li>Function 2</li>
+                  <li>Function 3</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="col col-2"></div>
+        </div>
       </section>
+
       <section
         className="background"
         style={{ "background-image": "url('/about-img/Amethyst_Nations.webp')" }}
