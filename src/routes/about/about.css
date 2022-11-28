@@ -200,10 +200,6 @@ section.background {
   aspect-ratio: 1;
 }
 
-.company-logo > img {
-  display: none;
-}
-
 .text-container > .company-name {
   text-transform: uppercase;
   font-weight: bold;
@@ -226,4 +222,53 @@ section.background {
   text-decoration: underline;
   text-decoration-style: dotted;
   cursor: help;
+}
+
+@media screen and (max-width: 1219px) {
+  .work-grid-container {
+    column-gap: 1vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+
+  .item > .company-logo {
+    margin-left: 2px;
+  }
+
+  .col > .item {
+    width: 98%;
+    gap: 0.5vw;
+    padding: 1vw 0 0 1vw;
+    padding-left: 0.5vw;
+  }
+}
+
+@media screen and (max-width: 839px) {
+  .work-grid-container {
+    grid-template-columns: 1fr;
+    row-gap: 2vw;
+  }
+
+  .work-grid-container > :is(.col-1, .col-2) {
+    grid-column: 1;
+  }
+
+  .col > .item {
+    width: 80%;
+  }
+
+  .item > .text-container {
+    margin-left: 5vw;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .col > .item {
+    width: 95%;
+  }
+
+  .item > .company-logo {
+    min-width: 32px;
+  }
+
 }
