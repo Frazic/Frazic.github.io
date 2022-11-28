@@ -108,10 +108,10 @@ a {
 footer {
   margin: auto var(--body-padding) 0 var(--body-padding);
   padding: 15px 0px 15px 0px;
+  padding-bottom: var(--navbar-width);
   text-align: center;
   font-size: 0.8rem;
   font-weight: var(--font-weight-light);
-  padding-bottom: var(--navbar-width);
 }
 
 footer a {
