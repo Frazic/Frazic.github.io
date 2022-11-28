@@ -6,16 +6,18 @@ export default component$(() => {
   useStyles$(style);
   return (
     <>
+      {/* ME */}
       <section
-        id="studies"
+        id="me"
         className="background"
         style={{ "background-image": "url('/about-img/hebros.webp')" }}
       >
         <h1 className="box-title">About</h1>
       </section>
 
+      {/* STUDIES */}
       <section
-        id="work"
+        id="studies"
         className="background"
         style={{ "background-image": "url('/about-img/TODO_NAME.webp')" }}
       >
@@ -80,7 +82,9 @@ export default component$(() => {
         </div>
       </section>
 
+      {/* WORK */}
       <section
+        id="work"
         className="background"
         style={{ "background-image": "url('/about-img/Amethyst_Nations.webp')" }}
       >
@@ -90,36 +94,36 @@ export default component$(() => {
             <div className="item">
               <div className="company-logo"><img src="/about-img/dog.webp"></img></div>
               <div className="text-container">
-                <div className="company-name">Company Name</div>
-                <div className="role">Role</div>
+                <div className="company-name">Sigma Integrale</div>
+                <div className="role">Software Engineer Intern - 2015</div>
                 <ul>
-                  <li>Function 1</li>
-                  <li>Function 2</li>
-                  <li>Function 3</li>
+                  <li>Connect racing game to dashboard</li>
+                  <li>Recreate proprietary software</li>
+                  <li>Work remote with USA</li>
                 </ul>
               </div>
             </div>
             <div className="item">
               <div className="company-logo"><img src="/about-img/dog.webp"></img></div>
               <div className="text-container">
-                <div className="company-name">Company Name</div>
-                <div className="role">Role</div>
+                <div className="company-name">Naval Group</div>
+                <div className="role">Engineer Apprentice - 2016-19</div>
                 <ul>
-                  <li>Function 1</li>
-                  <li>Function 2</li>
-                  <li>Function 3</li>
+                  <li>Test navy ship's <span className="tooltip" title="Operating System">OS</span></li>
+                  <li>Automate tests</li>
+                  <li>Virtualise systems</li>
                 </ul>
               </div>
             </div>
             <div className="item">
               <div className="company-logo"><img src="/about-img/dog.webp"></img></div>
               <div className="text-container">
-                <div className="company-name">Company Name</div>
-                <div className="role">Role</div>
+                <div className="company-name">Åland Sailing Robots</div>
+                <div className="role">Engineer Intern - 2018</div>
                 <ul>
-                  <li>Function 1</li>
-                  <li>Function 2</li>
-                  <li>Function 3</li>
+                  <li>Track live sailboat position</li>
+                  <li>3D print new parts</li>
+                  <li>Endurance test boat</li>
                 </ul>
               </div>
             </div>
@@ -128,24 +132,24 @@ export default component$(() => {
             <div className="item">
               <div className="company-logo"><img src="/about-img/dog.webp"></img></div>
               <div className="text-container">
-                <div className="company-name">Company Name</div>
-                <div className="role">Role</div>
+                <div className="company-name">IMDS Montreal</div>
+                <div className="role">Software Engineer - 2019-20</div>
                 <ul>
-                  <li>Function 1</li>
-                  <li>Function 2</li>
-                  <li>Function 3</li>
+                  <li>Improve <span className="tooltip" title="Optical Character Recognition">OCR</span> software</li>
+                  <li>Interface software with databases</li>
+                  <li>Integrate new camera drivers</li>
                 </ul>
               </div>
             </div>
             <div className="item">
               <div className="company-logo"><img src="/about-img/dog.webp"></img></div>
               <div className="text-container">
-                <div className="company-name">Company Name</div>
-                <div className="role">Role</div>
+                <div className="company-name">University of Southampton</div>
+                <div className="role">Softawre Engineer - 2021-22</div>
                 <ul>
-                  <li>Function 1</li>
-                  <li>Function 2</li>
-                  <li>Function 3</li>
+                  <li>Interface Teams and <span className="tooltip" title="Online education platform">Blackboard</span></li>
+                  <li>Develop websites for our apps</li>
+                  <li>Automate tasks for my team</li>
                 </ul>
               </div>
             </div>

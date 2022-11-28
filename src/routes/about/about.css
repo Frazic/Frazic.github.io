@@ -175,7 +175,11 @@ section.background {
   align-items: center;
   background-color: var(--color-purple-dark-transparent);
   border-radius: 1em;
-  justify-content: space-evenly;
+  justify-content: space-between;
+}
+
+.item > .text-container {
+  margin-right: auto;
 }
 
 .item > .company-logo {
@@ -183,6 +187,7 @@ section.background {
   padding: 0.5em;
   outline: 3px solid var(--color-green-mid);
   border-radius: 50%;
+  /* margin-left: 2vw; */
 }
 
 .company-logo > img {
@@ -192,9 +197,6 @@ section.background {
   min-width: 64px;
   aspect-ratio: 1;
   border-radius: 50%;
-}
-
-.item > .text-container {
 }
 
 .text-container > .company-name {
@@ -213,4 +215,10 @@ section.background {
 
 .text-container > ul > li::before {
   content: "👉 ";
+}
+
+.text-container > ul > li > span.tooltip {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  cursor: help;
 }
