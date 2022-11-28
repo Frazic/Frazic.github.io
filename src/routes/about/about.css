@@ -185,18 +185,23 @@ section.background {
 .item > .company-logo {
   text-align: center;
   padding: 0.5em;
-  outline: 3px solid var(--color-green-mid);
-  border-radius: 50%;
-  /* margin-left: 2vw; */
+
+  border-radius: 25%;
+
+  background-image: var(--background-img);
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  background-size: contain;
+  background-position: center;
+
+  margin-left: 2vw;
+
+  min-width: 64px;
+  aspect-ratio: 1;
 }
 
 .company-logo > img {
-  display: block;
-  margin: auto;
-  width: 15vmin;
-  min-width: 64px;
-  aspect-ratio: 1;
-  border-radius: 50%;
+  display: none;
 }
 
 .text-container > .company-name {

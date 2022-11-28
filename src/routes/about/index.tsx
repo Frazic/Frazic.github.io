@@ -90,9 +90,13 @@ export default component$(() => {
       >
         <div className="work-grid-container">
           <h2 className="title">🚀 Work</h2>
+
+          {/* COLUMN 1 */}
           <div className="col col-1">
+
+            {/* SIGMA INTEGRALE */}
             <div className="item">
-              <div className="company-logo"><img src="/about-img/dog.webp"></img></div>
+              <div className="company-logo" style={{ "--background-img": "url(/about-img/work-logos/sigma.webp)" }}></div>
               <div className="text-container">
                 <div className="company-name">Sigma Integrale</div>
                 <div className="role">Software Engineer Intern - 2015</div>
@@ -103,8 +107,10 @@ export default component$(() => {
                 </ul>
               </div>
             </div>
+
+            {/* NAVAL GROUP */}
             <div className="item">
-              <div className="company-logo"><img src="/about-img/dog.webp"></img></div>
+              <div className="company-logo" style={{ "--background-img": "url(/about-img/work-logos/ng.webp)" }}></div>
               <div className="text-container">
                 <div className="company-name">Naval Group</div>
                 <div className="role">Engineer Apprentice - 2016-19</div>
@@ -115,8 +121,10 @@ export default component$(() => {
                 </ul>
               </div>
             </div>
+
+            {/* ÅLAND */}
             <div className="item">
-              <div className="company-logo"><img src="/about-img/dog.webp"></img></div>
+              <div className="company-logo" style={{ "--background-img": "url(/about-img/work-logos/aland.webp)" }}></div>
               <div className="text-container">
                 <div className="company-name">Åland Sailing Robots</div>
                 <div className="role">Engineer Intern - 2018</div>
@@ -128,9 +136,13 @@ export default component$(() => {
               </div>
             </div>
           </div>
+
+          {/* COLUMN 2 */}
           <div className="col col-2">
+
+            {/* IMDS */}
             <div className="item">
-              <div className="company-logo"><img src="/about-img/dog.webp"></img></div>
+              <div className="company-logo" style={{ "--background-img": "url(/about-img/work-logos/imds.webp)" }}></div>
               <div className="text-container">
                 <div className="company-name">IMDS Montreal</div>
                 <div className="role">Software Engineer - 2019-20</div>
@@ -141,8 +153,10 @@ export default component$(() => {
                 </ul>
               </div>
             </div>
+
+            {/* SOTON */}
             <div className="item">
-              <div className="company-logo"><img src="/about-img/dog.webp"></img></div>
+              <div className="company-logo" style={{ "--background-img": "url(/about-img/work-logos/soton.webp)" }}></div>
               <div className="text-container">
                 <div className="company-name">University of Southampton</div>
                 <div className="role">Softawre Engineer - 2021-22</div>
@@ -153,15 +167,17 @@ export default component$(() => {
                 </ul>
               </div>
             </div>
+
+            {/* YOU */}
             <div className="item">
-              <div className="company-logo"><img src="/about-img/dog.webp"></img></div>
+              <div className="company-logo" style={{ "--background-img": "url(/about-img/work-logos/eyes.webp)" }}></div>
               <div className="text-container">
-                <div className="company-name">Company Name</div>
-                <div className="role">Role</div>
+                <div className="company-name">You, maybe?</div>
+                <div className="role">Webdev / Software Engineer - Whenever</div>
                 <ul>
-                  <li>Function 1</li>
-                  <li>Function 2</li>
-                  <li>Function 3</li>
+                  <li>Do some cool tricks</li>
+                  <li>Make a fancy website</li>
+                  <li>Get along well</li>
                 </ul>
               </div>
             </div>
