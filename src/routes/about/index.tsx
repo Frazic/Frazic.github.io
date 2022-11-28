@@ -190,6 +190,6 @@ export default component$(() => {
 
 export const head: DocumentHead = () => {
   return {
-    title: "About",
+    title: "Frazic - About",
   };
 };

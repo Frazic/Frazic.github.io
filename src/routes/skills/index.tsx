@@ -350,6 +350,6 @@ footer {\
 
 export const head: DocumentHead = () => {
   return {
-    title: "Skills",
+    title: "Frazic - Skills",
   };
 };
