@@ -29,10 +29,139 @@ section.background {
   background-color: var(--color-purple-dark-transparent);
   padding: 0.5em 0;
   width: 80%;
-  margin: 0 auto 2em;
+  margin: 0 auto 1em;
   border-radius: 0.25em;
   text-transform: uppercase;
 }
+
+/* ME */
+.rpgme-background {
+  background-image: url("/about-img/paper.webp");
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  background-size: cover;
+  background-position: center;
+  margin: 0 calc(2 * var(--content-margin-left));
+  border-radius: 1em;
+  padding: 2vw;
+  filter: opacity(0.97);
+}
+
+.rpgme-container {
+  font-family: 'Patrick Hand', cursive;
+
+  display: grid;
+  grid-template:
+    "header header header"
+    "attributes image talents"
+    "equipment image likes";
+
+  row-gap: 1vh;
+  color: var(--color-green-dark);
+}
+
+.text-xl {
+  font-size: 4vw;
+}
+
+.text-l {
+  font-size: 2vw;
+}
+
+.text-m {
+  font-size: 1vw;
+}
+
+.text-s {
+  font-size: 0.5vw;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.rpgme-container > .header-container {
+  grid-area: header;
+  justify-self: center;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 1vh;
+}
+
+.header-container > .char-name {
+  text-transform: uppercase;
+  letter-spacing: 0.5vw;
+}
+
+.header-container > .class-level-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.class-level-container > .class {
+  letter-spacing: 0.5vw;
+  text-decoration: underline;
+
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+
+.class-level-container > .level {
+  grid-column: 3;
+  grid-row: 1;
+  letter-spacing: 0.5vw;
+
+  border: 2px solid rgb(39, 37, 37);
+  border-radius: 0.5em;
+
+  padding: 0 1vw;
+  margin-left: auto;
+}
+
+.rpgme-container > .image-container {
+  grid-area: image;
+}
+
+.rpgme-container > .attributes-container {
+  grid-area: attributes;
+}
+
+.attributes-container > .attributes {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.attributes > .stat-points {
+  font-size: 1vw;
+  grid-column: 1;
+  background-color: rgba(0, 0, 0, 0.137);
+  border-radius: 1em;
+  padding: 2px;
+  width: fit-content;
+}
+
+.attributes > .stat-name {
+  font-size: 1.7vw;
+  grid-column: 2;
+  margin-left: 1vw;
+  width: 100%;
+  justify-self: left;
+}
+
+.rpgme-container > .equipment-container {
+  grid-area: equipment;
+}
+
+.rpgme-container > .talents-container {
+  grid-area: talents;
+}
+
+.rpgme-container > .likes-container {
+  grid-area: likes;
+}
+
+/* STUDIES */
 
 .container-flex {
   display: flex;

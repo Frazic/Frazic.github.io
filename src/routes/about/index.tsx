@@ -13,6 +13,50 @@ export default component$(() => {
         style={{ "background-image": "url('/about-img/hebros.webp')" }}
       >
         <h1 className="box-title">About</h1>
+
+        <div className="rpgme-background">
+          <div className="rpgme-container">
+            <div className="header-container">
+              <span className="char-name text-xl">Frazic</span>
+              <div className="class-level-container">
+                <span className="class text-l">Fullstack Developer</span>
+                <span className="level text-l"><span className="text-m">lvl: </span>26</span>
+              </div>
+            </div>
+            <div className="image-container"></div>
+            <div className="attributes-container">
+              <span className="text-l uppercase">Attributes</span>
+              <div className="attributes">
+                <span className="stat-points">⚫ ⚫ ⚪ ⚪ ⚪</span>
+                <span className="stat-name">🦍 Strength</span>
+                <span className="stat-points">⚫ ⚫ ⚫ ⚫ ⚪</span>
+                <span className="stat-name">🦅 Perception</span>
+                <span className="stat-points">⚫ ⚫ ⚪ ⚪ ⚪</span>
+                <span className="stat-name">🐎 Endurance</span>
+                <span className="stat-points">⚫ ⚫ ⚫ ⚪ ⚪</span>
+                <span className="stat-name">🦢 Charisma</span>
+                <span className="stat-points">⚫ ⚫ ⚫ ⚪ ⚪</span>
+                <span className="stat-name">🦉 Intelligence</span>
+                <span className="stat-points">⚫ ⚫ ⚪ ⚪ ⚪</span>
+                <span className="stat-name">🐆 Agility</span>
+                <span className="stat-points">⚫ ⚫ ⚫ ⚫ ⚪</span>
+                <span className="stat-name">🐈‍⬛ Luck</span>
+              </div>
+            </div>
+            <div className="equipment-container">
+              <span className="text-l uppercase">Equipment</span>
+              <div className="equipment"></div>
+            </div>
+            <div className="talents-container">
+              <span className="text-l uppercase">Talents</span>
+              <div className="talents"></div>
+            </div>
+            <div className="likes-container">
+              <div className="like text-l uppercase">Like</div>
+              <div className="dislike text-l uppercase">Dislike</div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* STUDIES */}
@@ -254,8 +298,7 @@ export default component$(() => {
   );
 });
 
-export const head: DocumentHead = () => {
-  return {
-    title: "Frazic - About",
-  };
+export const head: DocumentHead = {
+  title: "Frazic - About",
+  links: [{ rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" }]
 };
