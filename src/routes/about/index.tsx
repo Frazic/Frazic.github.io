@@ -1,9 +1,13 @@
-import { component$, useStyles$ } from "@builder.io/qwik";
+import { $, component$, useStyles$ } from "@builder.io/qwik";
 import { DocumentHead } from "@builder.io/qwik-city";
 import style from "./about.css?inline";
 
 export default component$(() => {
   useStyles$(style);
+  const getAge = $(() => {
+    return new Date().getFullYear() - 1996;
+  });
+
   return (
     <>
       {/* ME */}
@@ -21,7 +25,7 @@ export default component$(() => {
               <div className="class-level-container">
                 <span className="class text-l">Fullstack Developer</span>
                 <span className="level text-l"><span className="text-m">lvl: </span>
-                  {new Date().getFullYear() - 1996}
+                  {getAge()}
                 </span>
               </div>
             </div>
