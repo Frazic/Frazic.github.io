@@ -126,6 +126,7 @@
 /* Small screens */
 @media screen and (max-width: 600px) {
   .navbar {
+    --navbar-width: 3rem;
     top: auto;
     bottom: 0;
     width: 100vw;
@@ -134,8 +135,8 @@
     overflow-x: scroll;
   }
 
-  .navbar:hover {
-    width: 100vw;
+  .navbar:hover, .navbar:active {
+    --navbar-width: 3rem;
   }
 
   .navbar:hover .link-text {
@@ -143,7 +144,7 @@
   }
 
   .nav-item {
-    height: auto;
+    height: fit-content;
   }
 
   .nav-link {
