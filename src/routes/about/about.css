@@ -35,31 +35,6 @@ section.background {
 }
 
 /* ME */
-.rpgme-background {
-  background-image: url("/about-img/paper.webp");
-  background-repeat: no-repeat;
-  background-clip: padding-box;
-  background-size: cover;
-  background-position: center;
-  margin: 0 calc(2 * var(--content-margin-left));
-  border-radius: 1em;
-  padding: 2vw;
-  filter: opacity(0.97);
-}
-
-.rpgme-container {
-  font-family: 'Patrick Hand', cursive;
-
-  display: grid;
-  grid-template:
-    "header header header"
-    "attributes image talents"
-    "equipment image likes";
-
-  row-gap: 1vh;
-  color: var(--color-green-dark);
-}
-
 .text-xl {
   font-size: 4vw;
 }
@@ -80,12 +55,40 @@ section.background {
   text-transform: uppercase;
 }
 
+.rpgme-background {
+  background-image: url("/about-img/paper.webp");
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  background-size: cover;
+  background-position: center;
+  margin: 0 calc(2 * var(--content-margin-left));
+  border-radius: 1em;
+  padding: 1vh 2vw;
+  filter: opacity(0.97);
+}
+
+.rpgme-container {
+  font-family: 'Patrick Hand', cursive;
+
+  display: grid;
+  grid-template:
+    "header header header"
+    "attributes image likes"
+    "equipment image talents";
+
+  grid-template-columns: 35% auto 35%;
+  grid-template-rows: auto 1fr 1fr;
+  row-gap: 1vh;
+  column-gap: 0.5vw;
+  color: var(--color-green-dark);
+}
+
 .rpgme-container > .header-container {
   grid-area: header;
   justify-self: center;
   text-align: center;
   width: 100%;
-  padding-bottom: 1vh;
+  margin-bottom: 2vh;
 }
 
 .header-container > .char-name {
@@ -120,16 +123,30 @@ section.background {
 
 .rpgme-container > .image-container {
   grid-area: image;
+  align-self: center;
+  background-image: url("/about-img/canyon.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1em;
+  height: 90%;
+  box-shadow: inset 4px 4px 10px 0px black;
 }
 
 .rpgme-container > .attributes-container {
   grid-area: attributes;
+  justify-self: center;
+  text-align: center;
+  padding: 1vw;
+  width: fit-content;
 }
 
 .attributes-container > .attributes {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto;
   align-items: center;
+  justify-content: center;
+  text-align: left;
 }
 
 .attributes > .stat-points {
@@ -151,18 +168,57 @@ section.background {
 
 .rpgme-container > .equipment-container {
   grid-area: equipment;
+  text-align: center;
 }
 
 .rpgme-container > .talents-container {
   grid-area: talents;
+  text-align: center;
 }
 
 .rpgme-container > .likes-container {
   grid-area: likes;
+  display: grid;
+}
+
+:is(.like, .dislike) > ul {
+  list-style: none;
+  text-align: left;
+  margin-top: 1vh;
+  margin-bottom: 0.1vh;
+  padding: 0;
+}
+
+:is(.like, .dislike) {
+  text-align: center;
+}
+
+:is(.like, .dislike) > span.text-l.uppercase {
+  padding: 0 2vw;
+
+  border: 2px solid rgb(39, 37, 37);
+  border-radius: 1em;
+}
+
+.likes-container > .like {
+  grid-column: 1;
+  background-image: url("/about-img/flowers2.webp");
+  background-attachment: local;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: top 55% left 80%;
+}
+
+.likes-container > .dislike {
+  grid-column: 2;
+  background-image: url("/about-img/angry.webp");
+  background-attachment: local;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: top 35% right 30%;
 }
 
 /* STUDIES */
-
 .container-flex {
   display: flex;
   flex-direction: row;

@@ -30,7 +30,7 @@ export default component$(() => {
           })}
         </div>
 
-        <hr />
+        <hr className="hr-index" />
 
         <div className="subtitle">Frazic</div>
 
@@ -121,7 +121,7 @@ export default component$(() => {
         className="home-page-photo"
         src="josh-photo.webp"
         alt="Picture of Joshua Bruylant"
-        // loading="lazy"
+      // loading="lazy"
       />
     </div>
   );

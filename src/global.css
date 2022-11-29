@@ -197,7 +197,7 @@ footer img {
   animation-delay: 1s;
 }
 
-hr {
+hr.hr-index {
   border: 1px solid var(--color-green-light);
   opacity: 0;
   animation: fadeIn 0.5s forwards;

@@ -20,10 +20,13 @@ export default component$(() => {
               <span className="char-name text-xl">Frazic</span>
               <div className="class-level-container">
                 <span className="class text-l">Fullstack Developer</span>
-                <span className="level text-l"><span className="text-m">lvl: </span>26</span>
+                <span className="level text-l"><span className="text-m">lvl: </span>
+                  {new Date().getFullYear() - 1996}
+                </span>
               </div>
             </div>
-            <div className="image-container"></div>
+
+            <div className="image-container" />
             <div className="attributes-container">
               <span className="text-l uppercase">Attributes</span>
               <div className="attributes">
@@ -35,7 +38,7 @@ export default component$(() => {
                 <span className="stat-name">🐎 Endurance</span>
                 <span className="stat-points">⚫ ⚫ ⚫ ⚪ ⚪</span>
                 <span className="stat-name">🦢 Charisma</span>
-                <span className="stat-points">⚫ ⚫ ⚫ ⚪ ⚪</span>
+                <span className="stat-points">⚫ ⚫ ⚫ ⚫ ⚪</span>
                 <span className="stat-name">🦉 Intelligence</span>
                 <span className="stat-points">⚫ ⚫ ⚪ ⚪ ⚪</span>
                 <span className="stat-name">🐆 Agility</span>
@@ -52,8 +55,27 @@ export default component$(() => {
               <div className="talents"></div>
             </div>
             <div className="likes-container">
-              <div className="like text-l uppercase">Like</div>
-              <div className="dislike text-l uppercase">Dislike</div>
+              <div className="like">
+                <span className="text-l uppercase">Likes</span>
+                <ul className="text-l">
+                  <li><span className="text-m">❤️</span> Cooking</li>
+                  <li><span className="text-m">❤️</span> Capybaras</li>
+                  <li><span className="text-m">❤️</span> Plants</li>
+                  <li><span className="text-m">❤️</span> Accordion</li>
+                  <li><span className="text-m">❤️</span> Role Playing</li>
+                  <li className="text-m">😮 (I made the backgrounds!)</li>
+                </ul>
+              </div>
+              <div className="dislike">
+                <span className="text-l uppercase">Dislikes</span>
+                <ul className="text-l">
+                  <li><span className="text-m">💀</span> Bad listeners</li>
+                  <li><span className="text-m">💀</span> Gore</li>
+                  <li><span className="text-m">💀</span> Meat</li>
+                  <li><span className="text-m">💀</span> Egotistics</li>
+                  <li><span className="text-m">💀</span> Close-mindedness</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
