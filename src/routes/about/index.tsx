@@ -39,20 +39,20 @@ export default component$(() => {
             <div className="attributes-container">
               <span className="text-l uppercase">Attributes</span>
               <div className="attributes">
-                <span className="stat-points">⚫ ⚫ ⚪ ⚪ ⚪</span>
-                <span className="stat-name">🦍 Strength</span>
-                <span className="stat-points">⚫ ⚫ ⚫ ⚫ ⚪</span>
-                <span className="stat-name">🦅 Perception</span>
-                <span className="stat-points">⚫ ⚫ ⚪ ⚪ ⚪</span>
-                <span className="stat-name">🐎 Endurance</span>
-                <span className="stat-points">⚫ ⚫ ⚫ ⚪ ⚪</span>
-                <span className="stat-name">🦢 Charisma</span>
-                <span className="stat-points">⚫ ⚫ ⚫ ⚫ ⚪</span>
-                <span className="stat-name">🦉 Intelligence</span>
-                <span className="stat-points">⚫ ⚫ ⚪ ⚪ ⚪</span>
-                <span className="stat-name">🐆 Agility</span>
-                <span className="stat-points">⚫ ⚫ ⚫ ⚫ ⚪</span>
-                <span className="stat-name">🐈‍⬛ Luck</span>
+                <span className="stat-points text-m">⚫ ⚫ ⚪ ⚪ ⚪</span>
+                <span className="stat-name text-l">🦍 Strength</span>
+                <span className="stat-points text-m">⚫ ⚫ ⚫ ⚫ ⚪</span>
+                <span className="stat-name text-l">🦅 Perception</span>
+                <span className="stat-points text-m">⚫ ⚫ ⚪ ⚪ ⚪</span>
+                <span className="stat-name text-l">🐎 Endurance</span>
+                <span className="stat-points text-m">⚫ ⚫ ⚫ ⚪ ⚪</span>
+                <span className="stat-name text-l">🦢 Charisma</span>
+                <span className="stat-points text-m">⚫ ⚫ ⚫ ⚫ ⚪</span>
+                <span className="stat-name text-l">🦉 Intelligence</span>
+                <span className="stat-points text-m">⚫ ⚫ ⚪ ⚪ ⚪</span>
+                <span className="stat-name text-l">🐆 Agility</span>
+                <span className="stat-points text-m">⚫ ⚫ ⚫ ⚫ ⚪</span>
+                <span className="stat-name text-l">🐈‍⬛ Luck</span>
               </div>
             </div>
 
@@ -97,13 +97,13 @@ export default component$(() => {
               <span className="text-l uppercase">Talents</span>
               <div className="talents">
                 <ul>
-                  <li>Recipe: Lentil Dahl</li>
+                  <li className="text-ml">Recipe: Lentil Dahl</li>
                   <hr />
-                  <li>Painting: Miniatures</li>
+                  <li className="text-ml">Painting: Miniatures</li>
                   <hr />
-                  <li>Expression: Role playing</li>
+                  <li className="text-ml">Expression: Role playing</li>
                   <hr />
-                  <li>Sport: Rowing</li>
+                  <li className="text-ml">Sport: Rowing</li>
                   <hr />
                 </ul>
               </div>
