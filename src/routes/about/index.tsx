@@ -31,6 +31,7 @@ export default component$(() => {
             </div>
 
             <div className="image-container" />
+
             <div className="attributes-container">
               <span className="text-l uppercase">Attributes</span>
               <div className="attributes">
@@ -50,9 +51,15 @@ export default component$(() => {
                 <span className="stat-name">🐈‍⬛ Luck</span>
               </div>
             </div>
+
             <div className="equipment-container">
               <span className="text-l uppercase">Equipment</span>
-              <div className="equipment"></div>
+              <div className="equipment-grid">
+                <div className="equipment one"></div>
+                <div className="equipment two"></div>
+                <div className="equipment three"></div>
+                <div className="equipment four"></div>
+              </div>
             </div>
             <div className="talents-container">
               <span className="text-l uppercase">Talents</span>

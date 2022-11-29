@@ -77,7 +77,6 @@ section.background {
     "equipment image talents";
 
   grid-template-columns: 35% auto 35%;
-  grid-template-rows: auto 1fr 1fr;
   row-gap: 1vh;
   column-gap: 0.5vw;
   color: var(--color-green-dark);
@@ -169,6 +168,67 @@ section.background {
 .rpgme-container > .equipment-container {
   grid-area: equipment;
   text-align: center;
+  display: grid;
+  grid-template:
+  "header header"
+  "e e";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3vh 1fr;
+  row-gap: 3vh;
+  width: fit-content;
+  justify-self: center;
+  margin-bottom: 3vh;
+}
+
+.equipment-container > span.text-l.uppercase {
+  grid-area: header;
+}
+
+.equipment-container > .equipment-grid {
+  grid-area: e;
+  display: grid;
+  grid-template-areas:
+  "one two"
+  "three four";
+  row-gap: 3vh;
+  column-gap: 3vw;
+}
+
+.equipment-grid > .equipment {
+  width: 5vw;
+  aspect-ratio: 1;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  border: 2px solid var(--color-green-dark);
+
+  border-image-slice: 385 457 557 428;
+  border-image-width: 20px;
+  border-image-outset: 10px;
+  border-image-repeat: stretch;
+  border-image-source: url("/about-img/vines.webp");
+  border-style: solid;
+}
+
+.equipment-grid > .one {
+  grid-area: one;
+  background-image: url("/about-img/laptop.webp");
+}
+
+.equipment-grid > .two {
+  grid-area: two;
+  background-image: url("/about-img/spatula.webp");
+}
+
+.equipment-grid > .three {
+  grid-area: three;
+  background-image: url("/about-img/water-can.webp");
+}
+
+.equipment-grid > .four {
+  grid-area: four;
+  background-image: url("/about-img/d20.webp");
 }
 
 .rpgme-container > .talents-container {
