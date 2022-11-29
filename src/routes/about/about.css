@@ -421,10 +421,8 @@ section.background {
     row-gap: 2.5vw;
   }
 
-  .equipment-container > .equipment-grid {
-    grid-template-areas:
-    "one two three four";
-    column-gap: 3vw;
+  .equipment-grid > .equipment {
+    width: 8vw;
   }
 
   .talents > ul {

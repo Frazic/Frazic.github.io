@@ -23,10 +23,6 @@ export const RouterHead = component$(() => {
         rel="stylesheet"
       />
 
-      {/* INCONSOLATA */}
-      {/* <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" /> */}
-
-
       <meta property="og:site_name" content="Joshua Bruylant's Portfolio" />
       {/* <meta name="twitter:site" content="@Frazic" /> */}
       {/* <meta name="twitter:title" content="Frazic" /> */}

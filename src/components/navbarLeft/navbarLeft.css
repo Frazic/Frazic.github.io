@@ -129,7 +129,7 @@
     top: auto;
     bottom: 0;
     width: 100vw;
-    height: 5rem;
+    height: var(--navbar-width);
     overflow-y: hidden;
     overflow-x: scroll;
   }
@@ -143,7 +143,7 @@
   }
 
   .nav-item {
-    height: 100%;
+    height: auto;
   }
 
   .nav-link {
@@ -151,7 +151,8 @@
   }
 
   .nav-link svg {
-    width: 3rem;
+    width: 30%;
+    min-width: 0;
   }
 
   .logo {

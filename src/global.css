@@ -9,7 +9,7 @@
 :root {
   font-size: max(20px, 1.2vw);
 
-  --navbar-width: 5rem;
+  --navbar-width: 3rem;
   --body-padding: 1rem;
 
   --font-weight-light: 300;
