@@ -20,6 +20,8 @@ export default component$(() => {
 
         <div className="rpgme-background">
           <div className="rpgme-container">
+
+            {/* HEADER */}
             <div className="header-container">
               <span className="char-name text-xl">Frazic</span>
               <div className="class-level-container">
@@ -30,8 +32,10 @@ export default component$(() => {
               </div>
             </div>
 
+            {/* IMAGE */}
             <div className="image-container" />
 
+            {/* ATTRIBUTES */}
             <div className="attributes-container">
               <span className="text-l uppercase">Attributes</span>
               <div className="attributes">
@@ -52,6 +56,7 @@ export default component$(() => {
               </div>
             </div>
 
+            {/* EQUIPMENT */}
             <div className="equipment-container">
               <span className="text-l uppercase">Equipment</span>
               <div className="equipment-grid">
@@ -61,10 +66,8 @@ export default component$(() => {
                 <div className="equipment four"></div>
               </div>
             </div>
-            <div className="talents-container">
-              <span className="text-l uppercase">Talents</span>
-              <div className="talents"></div>
-            </div>
+
+            {/* LIKES */}
             <div className="likes-container">
               <div className="like">
                 <span className="text-l uppercase">Likes</span>
@@ -88,6 +91,24 @@ export default component$(() => {
                 </ul>
               </div>
             </div>
+
+            {/* TALENTS */}
+            <div className="talents-container">
+              <span className="text-l uppercase">Talents</span>
+              <div className="talents">
+                <ul>
+                  <li>Recipe: Lentil Dahl</li>
+                  <hr />
+                  <li>Painting: Miniatures</li>
+                  <hr />
+                  <li>Expression: Role playing</li>
+                  <hr />
+                  <li>Sport: Rowing</li>
+                  <hr />
+                </ul>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>

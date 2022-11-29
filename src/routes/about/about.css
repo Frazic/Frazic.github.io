@@ -231,11 +231,6 @@ section.background {
   background-image: url("/about-img/d20.webp");
 }
 
-.rpgme-container > .talents-container {
-  grid-area: talents;
-  text-align: center;
-}
-
 .rpgme-container > .likes-container {
   grid-area: likes;
   display: grid;
@@ -276,6 +271,31 @@ section.background {
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: top 35% right 30%;
+}
+
+.rpgme-container > .talents-container {
+  grid-area: talents;
+  padding-left: 4vw;
+}
+
+.talents-container > .talents {
+  text-align: left;
+  background-color: beige;
+  width: 70%;
+  padding: 0.1vh 0.5vw;
+  line-height: 2vh;
+  border-radius: 1em;
+  box-shadow: 4px 4px 10px 0px black;
+}
+
+.talents > ul {
+  list-style: none;
+  padding: 0;
+}
+
+.talents > ul > hr {
+  margin-top: -0.1vh;
+  border: 1px solid rgb(39, 37, 37);
 }
 
 /* STUDIES */
