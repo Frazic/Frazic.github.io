@@ -233,3 +233,28 @@
     margin: auto;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .tree-grid {
+    width: 100%;
+  }
+
+  .talent-grid > .talent-header {
+    font-size: 8vw;
+  }
+
+  .talent-column > .talent-item {
+    padding: 0.1em;
+    height: 8vw;
+    font-size: 5.5vw;
+    width: 95%;
+    grid-template-columns: 32px auto;
+    justify-content: left;
+  }
+
+  .talent-item > img {
+    max-width: unset;
+    width: 6vw;
+  }
+
+}
