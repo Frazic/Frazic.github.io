@@ -418,20 +418,21 @@ section.background {
   }
 
   .rpgme-container > .equipment-container {
-    row-gap: 2.5vw;
+    row-gap: 4vw;
   }
 
   .equipment-grid > .equipment {
-    width: 8vw;
+    width: 12vw;
   }
 
   .talents > ul {
-    line-height: 3vw;
+    line-height: 4vw;
     margin-top: 0.5vw;
   }
 
   .talents > ul > hr {
-    margin-top: -0.2vw;
+    margin-top: -0.7vw;
+    border-width: 0.5px;
   }
 }
 

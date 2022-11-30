@@ -83,10 +83,10 @@ export default component$(() => {
               <div className="dislike">
                 <span className="text-l uppercase">Dislikes</span>
                 <ul className="text-l">
-                  <li><span className="text-m">💀</span> Bad listeners</li>
+                  <li><span className="text-m">💀</span> Intolerance</li>
                   <li><span className="text-m">💀</span> Gore</li>
                   <li><span className="text-m">💀</span> Meat</li>
-                  <li><span className="text-m">💀</span> Egotistics</li>
+                  <li><span className="text-m">💀</span> Sexism</li>
                   <li><span className="text-m">💀</span> Close-mindedness</li>
                 </ul>
               </div>
