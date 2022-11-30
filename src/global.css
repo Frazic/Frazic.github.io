@@ -22,11 +22,11 @@
   /* Made using https://paletton.com */
 
   /* Purple tones */
-  --color-purple-lightest: #c3a5cb;
+  --color-purple-lightest: hsl(287,27%,82%);
   --color-purple-light: #743d83;
   --color-purple-mid: #420e51;
   --color-purple-dark: #23232e;
-  --color-purple-darkest: #141414;
+  --color-purple-darkest: #0f0f0f;
 
   /* Green tones */
   --color-green-lightest: #d0eda9;

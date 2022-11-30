@@ -27,7 +27,7 @@
   min-height: 4rem;
   max-width: 12rem;
   max-height: 10rem;
-  padding: 1.5em;
+  padding: 1.5em 1.5em 0.5em;
 
   border-radius: 1em;
   background-color: var(--color-purple-dark);
@@ -38,6 +38,8 @@
   margin: 0;
   scroll-snap-align: start;
   clear: both;
+
+  cursor: pointer;
 }
 
 .card:hover ~ .card,
@@ -147,7 +149,15 @@
   stroke-linecap: round;
 }
 
-.tags a {
+ul.tags {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.tags li {
+  display: inline-block;
   visibility: hidden;
   font-style: normal;
   font-weight: 700;
@@ -159,24 +169,23 @@
   border: 3px solid #28242f;
   border-radius: 2em;
   padding: 0.2em 0.85em 0.25em;
+  margin: 0.5vw 0.5vw 0;
   position: relative;
-}
 
-.tags a:hover {
   background: linear-gradient(
     90deg,
-    var(--color-green-light),
+    var(--color-green-mid),
     var(--color-green-lightest)
   );
   text-shadow: none;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  border-color: var(--color-purple-lightest);
+  border-color: var(--color-purple-light);
 }
 
-.card:hover .tags a,
-.card:active .tags a {
+.card:hover .tags li,
+.card:active .tags li {
   visibility: visible;
 }
 

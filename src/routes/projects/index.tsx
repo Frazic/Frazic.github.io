@@ -9,12 +9,10 @@ export default component$(() => {
     <div>
       <h1>Projects</h1>
       <section className="card-list">
-        <article className="card">
+        <article className="card" onClick$={() => console.log("Hi")}>
           <header className="card-header">
             <p>01 May 1996</p>
-            <h2>
-              <a href="projects/born">Josh was born!</a>
-            </h2>
+            <h2>Josh was born!</h2>
           </header>
 
           <div className="card-author">
@@ -30,11 +28,11 @@ export default component$(() => {
               Frazic
             </div>
           </div>
-          <div className="tags">
-            <a href="#">birth</a>
-            <a href="#">lift</a>
-            <a href="#">boi</a>
-          </div>
+          <ul className="tags">
+            <li>birth</li>
+            <li>lift</li>
+            <li>boi</li>
+          </ul>
         </article>
 
         <article className="card">
