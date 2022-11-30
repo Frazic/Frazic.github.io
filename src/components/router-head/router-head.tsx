@@ -36,14 +36,14 @@ export const RouterHead = component$(() => {
       <meta property="og:url" content="frazic.github.io" />
       <meta property="og:title" content="Frazic - Portfolio" />
       <meta property="og:description" content="Skills, projects and a bit about himself" />
-      <meta property="og:image" content="/josh-photo.webp" />
+      <meta property="og:image" content="https://frazic.github.io/josh-photo.webp" />
 
       {/* <!-- Twitter --> */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="frazic.github.io" />
       <meta property="twitter:title" content="Frazic - Portfolio" />
       <meta property="twitter:description" content="Skills, projects and a bit about himself" />
-      <meta property="twitter:image" content="/josh-photo.webp" />
+      <meta property="twitter:image" content="https://frazic.github.io/josh-photo.webp" />
 
       {/* FACEBOOK */}
       {/* <meta property="og:title" content="Frazic - Portfolio" />
