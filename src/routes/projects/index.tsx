@@ -1,15 +1,30 @@
-import { component$, useStyles$ } from "@builder.io/qwik";
+import { component$, useStyles$, $, JSXNode, useStore, useSignal, useClientEffect$, useWatch$ } from "@builder.io/qwik";
 import { DocumentHead } from "@builder.io/qwik-city";
 import styles from "./projects.css?inline";
 
 export default component$(() => {
   useStyles$(styles);
 
+  const popUpContentRef = useSignal<HTMLDivElement>();
+  const popUpContent = useSignal<string>();
+
+  useWatch$(({ track }) => {
+    track(() => popUpContent.value)
+    console.log(popUpContent.value)
+    if (popUpContentRef.value) {
+      popUpContentRef.value.innerHTML = popUpContent.value ? popUpContent.value : "";
+    }
+  })
+
   return (
     <div>
+      <div ref={popUpContentRef} />
       <h1>Projects</h1>
       <section className="card-list">
-        <article className="card" onClick$={() => console.log("Hi")}>
+        <article className="card" onClick$={() => {
+          popUpContent.value =
+            "<div>Hello there!</div>"
+        }}>
           <header className="card-header">
             <p>01 May 1996</p>
             <h2>Josh was born!</h2>
