@@ -1,23 +1,38 @@
-import { component$, useStyles$, $, JSXNode, useStore, useSignal, useClientEffect$, useWatch$, JSXChildren } from "@builder.io/qwik";
+import { component$, useStyles$, useStore, $, useSignal } from "@builder.io/qwik";
 import { DocumentHead } from "@builder.io/qwik-city";
+import { ProjectPopUp, ProjectPopUpContentStore } from "./projectPopUp/ProjectPopUp";
 import styles from "./projects.css?inline";
 
 export default component$(() => {
   useStyles$(styles);
 
-  const popUpContentRef = useSignal<HTMLDivElement>();
-  const setPopUpContent$ = $((content: string) => {
-    if (popUpContentRef.value) {
-      popUpContentRef.value.innerHTML = content;
-    }
-  })
+
+  const popUpContentStore = useStore<ProjectPopUpContentStore>({
+    isActive: false,
+    title: "",
+    date: "",
+    location: "",
+    description: "",
+    imageSrc: ""
+  });
+
+  // const onClickOutside$ = $((event: Event, element: Element) => {
+  // })
 
   return (
     <div>
-      <div ref={popUpContentRef} />
+      <ProjectPopUp store={popUpContentStore} />
+
       <h1>Projects</h1>
       <section className="card-list">
-        <article className="card" onClick$={() => setPopUpContent$("<div>Hello there!</div>")}>
+        <article className="card" onClick$={() => {
+          popUpContentStore.isActive = true;
+          popUpContentStore.title = "Project Title";
+          popUpContentStore.date = "01 May 1996";
+          popUpContentStore.location = "Versailles";
+          popUpContentStore.description = "Project Description"
+          popUpContentStore.imageSrc = "/josh-photo.webp"
+        }}>
           <header className="card-header">
             <p>01 May 1996</p>
             <h2>Josh was born!</h2>
