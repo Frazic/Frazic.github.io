@@ -55,10 +55,17 @@ export default component$(() => {
           </ul>
         </article>
 
-        <article className="card">
+        <article className="card" onClick$={() => {
+          popUpContentStore.isActive = true;
+          popUpContentStore.title = "Project Title";
+          popUpContentStore.date = "01 May 1996";
+          popUpContentStore.location = "Versailles";
+          popUpContentStore.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          popUpContentStore.imageSrc = "/josh-photo.webp"
+        }}>
           <header className="card-header">
-            <p>Some time during his life</p>
-            <h2>Cool project name</h2>
+            <p>01 May 1996</p>
+            <h2>Josh was born!</h2>
           </header>
 
           <div className="card-author">
@@ -70,22 +77,28 @@ export default component$(() => {
             </svg>
 
             <div className="author-name">
-              <div className="author-name-prefix">Naval Group</div>
-              Josh Bruylant
+              <div className="author-name-prefix">Dr.</div>
+              Frazic
             </div>
           </div>
-
-          <div className="tags">
-            <a href="#">learning</a>
-            <a href="#">software</a>
-            <a href="#">cool</a>
-          </div>
+          <ul className="tags">
+            <li>birth</li>
+            <li>lift</li>
+            <li>boi</li>
+          </ul>
         </article>
 
-        <article className="card">
+        <article className="card" onClick$={() => {
+          popUpContentStore.isActive = true;
+          popUpContentStore.title = "Project Title";
+          popUpContentStore.date = "01 May 1996";
+          popUpContentStore.location = "Versailles";
+          popUpContentStore.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          popUpContentStore.imageSrc = "/josh-photo.webp"
+        }}>
           <header className="card-header">
-            <p>Some time during his life</p>
-            <h2>Cool project name</h2>
+            <p>01 May 1996</p>
+            <h2>Josh was born!</h2>
           </header>
 
           <div className="card-author">
@@ -97,22 +110,28 @@ export default component$(() => {
             </svg>
 
             <div className="author-name">
-              <div className="author-name-prefix">Naval Group</div>
-              Josh Bruylant
+              <div className="author-name-prefix">Dr.</div>
+              Frazic
             </div>
           </div>
-
-          <div className="tags">
-            <a href="#">learning</a>
-            <a href="#">software</a>
-            <a href="#">cool</a>
-          </div>
+          <ul className="tags">
+            <li>birth</li>
+            <li>lift</li>
+            <li>boi</li>
+          </ul>
         </article>
 
-        <article className="card">
+        <article className="card" onClick$={() => {
+          popUpContentStore.isActive = true;
+          popUpContentStore.title = "Project Title";
+          popUpContentStore.date = "01 May 1996";
+          popUpContentStore.location = "Versailles";
+          popUpContentStore.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          popUpContentStore.imageSrc = "/josh-photo.webp"
+        }}>
           <header className="card-header">
-            <p>Some time during his life</p>
-            <h2>Cool project name</h2>
+            <p>01 May 1996</p>
+            <h2>Josh was born!</h2>
           </header>
 
           <div className="card-author">
@@ -124,22 +143,28 @@ export default component$(() => {
             </svg>
 
             <div className="author-name">
-              <div className="author-name-prefix">Naval Group</div>
-              Josh Bruylant
+              <div className="author-name-prefix">Dr.</div>
+              Frazic
             </div>
           </div>
-
-          <div className="tags">
-            <a href="#">learning</a>
-            <a href="#">software</a>
-            <a href="#">cool</a>
-          </div>
+          <ul className="tags">
+            <li>birth</li>
+            <li>lift</li>
+            <li>boi</li>
+          </ul>
         </article>
 
-        <article className="card">
+        <article className="card" onClick$={() => {
+          popUpContentStore.isActive = true;
+          popUpContentStore.title = "Project Title";
+          popUpContentStore.date = "01 May 1996";
+          popUpContentStore.location = "Versailles";
+          popUpContentStore.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          popUpContentStore.imageSrc = "/josh-photo.webp"
+        }}>
           <header className="card-header">
-            <p>Some time during his life</p>
-            <h2>Cool project name</h2>
+            <p>01 May 1996</p>
+            <h2>Josh was born!</h2>
           </header>
 
           <div className="card-author">
@@ -151,22 +176,28 @@ export default component$(() => {
             </svg>
 
             <div className="author-name">
-              <div className="author-name-prefix">Naval Group</div>
-              Josh Bruylant
+              <div className="author-name-prefix">Dr.</div>
+              Frazic
             </div>
           </div>
-
-          <div className="tags">
-            <a href="#">learning</a>
-            <a href="#">software</a>
-            <a href="#">cool</a>
-          </div>
+          <ul className="tags">
+            <li>birth</li>
+            <li>lift</li>
+            <li>boi</li>
+          </ul>
         </article>
 
-        <article className="card">
+        <article className="card" onClick$={() => {
+          popUpContentStore.isActive = true;
+          popUpContentStore.title = "Project Title";
+          popUpContentStore.date = "01 May 1996";
+          popUpContentStore.location = "Versailles";
+          popUpContentStore.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          popUpContentStore.imageSrc = "/josh-photo.webp"
+        }}>
           <header className="card-header">
-            <p>Some time during his life</p>
-            <h2>Cool project name</h2>
+            <p>01 May 1996</p>
+            <h2>Josh was born!</h2>
           </header>
 
           <div className="card-author">
@@ -178,16 +209,15 @@ export default component$(() => {
             </svg>
 
             <div className="author-name">
-              <div className="author-name-prefix">Naval Group</div>
-              Josh Bruylant
+              <div className="author-name-prefix">Dr.</div>
+              Frazic
             </div>
           </div>
-
-          <div className="tags">
-            <a href="#">learning</a>
-            <a href="#">software</a>
-            <a href="#">cool</a>
-          </div>
+          <ul className="tags">
+            <li>birth</li>
+            <li>lift</li>
+            <li>boi</li>
+          </ul>
         </article>
       </section>
     </div>
