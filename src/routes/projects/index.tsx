@@ -16,9 +16,6 @@ export default component$(() => {
     imageSrc: ""
   });
 
-  // const onClickOutside$ = $((event: Event, element: Element) => {
-  // })
-
   return (
     <div>
       <ProjectPopUp store={popUpContentStore} />
@@ -200,5 +197,6 @@ export default component$(() => {
 export const head: DocumentHead = () => {
   return {
     title: "Frazic - Projects",
+    links: [{ rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" }]
   };
 };

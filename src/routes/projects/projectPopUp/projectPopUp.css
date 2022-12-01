@@ -1,14 +1,13 @@
 .popup-container {
     position: absolute;
-    z-index: 999;
+    z-index: 998;
     left: var(--body-padding);
     right: 0;
     top: 0;
     bottom: 0;
-    text-align: center;
-    border: 1px solid #666;
+
     transform: scale(0);
-    transition: transform 100ms ease-in;
+    transition: transform 120ms ease-in-out;
 }
 
 .popup-container.active {
@@ -18,8 +17,18 @@
 .popup-container > .popup {
     position: relative;
     background-color: var(--color-purple-darkest);
-    margin: auto auto;
-    width: 75%;
+    z-index: 999;
+    margin: 5% auto;
+    width: fit-content;
+    padding: 1% 5%;
+
+    display: flex;
+    flex-direction: column;
+
+    border: 2px solid var(--color-green-dark);
+    border-radius: 1em;
+
+    box-shadow: 0px 0px 20px 20px black;
 }
 
 .popup > .closeBtn {
@@ -34,7 +43,7 @@
     position: absolute;
     top: 2%;
     right: 2%;
-    width: 5%;
+    width: 7%;
 }
 
 .closeBtn > svg {
@@ -45,4 +54,48 @@
 .closeBtn > svg:active,
 .closeBtn > svg:focus {
     fill: rgba(255, 255, 255, 1);
+}
+
+.popup > .title {
+    text-transform: uppercase;
+    font-family: 'Inconsolata', monospace;
+    width: fit-content;
+
+    border-bottom: 2px solid var(--color-green-light);
+}
+
+.popup > .date-location {
+    font-family: 'Inconsolata', monospace;
+    width: fit-content;
+    margin-left: auto;
+    padding: 2%;
+    border-left: 2px solid var(--color-green-light);
+    border-radius: 1em;
+}
+
+.date-location > .date::before {
+    content: "Date: "
+}
+
+.date-location > .location::before {
+    content: "Location: "
+}
+
+.popup > .description-container {
+    position: relative;
+}
+
+.description-container > .description::before {
+    position: absolute;
+    top: -250%;
+    content: open-quote;
+    font-size: 7em;
+    color: var(--color-green-light);
+}
+
+.popup > img.image {
+    border-radius: 1em;
+    width: 80%;
+    align-self: center;
+    margin: 3% 0;
 }
