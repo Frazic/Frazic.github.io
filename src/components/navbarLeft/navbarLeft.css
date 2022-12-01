@@ -14,7 +14,7 @@
   background-color: var(--color-purple-dark);
   transition: width 200ms ease;
   overflow: scroll;
-  z-index: 99;
+  z-index: 999;
 }
 
 .navbar:hover {
@@ -152,7 +152,7 @@
   }
 
   .nav-link svg {
-    width: 30%;
+    height: 40%;
     min-width: 0;
   }
 
