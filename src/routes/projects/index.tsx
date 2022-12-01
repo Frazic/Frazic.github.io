@@ -1,4 +1,4 @@
-import { component$, useStyles$, useStore, $, useSignal } from "@builder.io/qwik";
+import { component$, useStyles$, useStore } from "@builder.io/qwik";
 import { DocumentHead } from "@builder.io/qwik-city";
 import { ProjectPopUp, ProjectPopUpContentStore } from "./projectPopUp/ProjectPopUp";
 import styles from "./projects.css?inline";
@@ -27,7 +27,7 @@ export default component$(() => {
           popUpContentStore.title = "Project Title";
           popUpContentStore.date = "01 May 1996";
           popUpContentStore.location = "Versailles";
-          popUpContentStore.description = "Project Description"
+          popUpContentStore.description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
           popUpContentStore.imageSrc = "/josh-photo.webp"
         }}>
           <header className="card-header">

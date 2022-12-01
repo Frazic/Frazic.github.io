@@ -1,7 +1,7 @@
 .popup-container {
     position: absolute;
     z-index: 998;
-    left: var(--body-padding);
+    left: var(--navbar-width);
     right: 0;
     top: 0;
     bottom: 0;
@@ -44,16 +44,18 @@
     top: 2%;
     right: 2%;
     width: 7%;
+    min-width: 32px;
 }
 
 .closeBtn > svg {
-    fill: rgba(255, 255, 255, 0.5);
+    fill: var(--color-green-light);
+    filter: grayscale(1);
 }
 
 .closeBtn > svg:hover,
 .closeBtn > svg:active,
 .closeBtn > svg:focus {
-    fill: rgba(255, 255, 255, 1);
+    filter: grayscale(0);
 }
 
 .popup > .title {
@@ -83,11 +85,13 @@
 
 .popup > .description-container {
     position: relative;
+    max-width: 60ch;
+    text-align: justify;
 }
 
 .description-container > .description::before {
     position: absolute;
-    top: -250%;
+    top: -65px;
     content: open-quote;
     font-size: 7em;
     color: var(--color-green-light);
