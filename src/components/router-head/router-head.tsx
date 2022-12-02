@@ -27,7 +27,10 @@ export const RouterHead = component$(() => {
 
       {/* <!-- Primary Meta Tags --> */}
       <meta name="title" content="Frazic - Portfolio" />
-      <meta name="description" content="Skills, projects and a bit about himself" />
+      <meta
+        name="description"
+        content="Skills, projects and a bit about himself"
+      />
       <meta name="author" content="Joshua Bruylant" />
       <meta name="robots" content="index, follow" />
 
@@ -35,21 +38,32 @@ export const RouterHead = component$(() => {
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://frazic.github.io" />
       <meta property="og:title" content="Frazic - Portfolio" />
-      <meta property="og:description" content="Skills, projects and a bit about himself" />
-      <meta property="og:image" content="https://frazic.github.io/josh-photo.webp" />
+      <meta
+        property="og:description"
+        content="Skills, projects and a bit about himself"
+      />
+      <meta
+        property="og:image"
+        content="https://frazic.github.io/josh-photo.webp"
+      />
 
       {/* <!-- Twitter --> */}
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="https://frazic.github.io" />
       <meta property="twitter:title" content="Frazic - Portfolio" />
-      <meta property="twitter:description" content="Skills, projects and a bit about himself" />
-      <meta property="twitter:image" content="https://frazic.github.io/josh-photo.webp" />
+      <meta
+        property="twitter:description"
+        content="Skills, projects and a bit about himself"
+      />
+      <meta
+        property="twitter:image"
+        content="https://frazic.github.io/josh-photo.webp"
+      />
 
       {/* FACEBOOK */}
       {/* <meta property="og:title" content="Frazic - Portfolio" />
       <meta property="og:image" content="/josh-photo.webp" />
       <meta property="og:description" content="Skills, projects and a bit about himself" /> */}
-
 
       {/* TWITTER */}
       {/* <meta name="twitter:card" content="summary_large_image" />
