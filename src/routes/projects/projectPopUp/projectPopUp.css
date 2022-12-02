@@ -1,118 +1,140 @@
 .popup-container {
-    position: absolute;
-    z-index: 998;
-    left: var(--navbar-width);
-    right: 0;
-    top: 0;
-    bottom: 0;
+  position: absolute;
+  z-index: 998;
+  left: var(--navbar-width);
+  right: 0;
+  top: 0;
+  bottom: 0;
+  min-width: fit-content;
+  min-height: fit-content;
 
-    transform: scale(0);
-    transition: transform 120ms ease-in-out;
+  transform: scale(0);
+  transition: transform 120ms ease-in-out;
+
+  --scroll-y: 0;
 }
 
 .popup-container.active {
-    transform: unset;
+  transform: unset;
 }
 
 .popup-container > .popup {
-    position: relative;
-    background-color: var(--color-purple-darkest);
-    z-index: 999;
-    margin: 5% auto;
-    width: fit-content;
-    padding: 5% 5%;
+  position: relative;
+  background-color: var(--color-purple-darkest);
+  z-index: 999;
+  margin: calc(var(--scroll-y) + 5%) auto;
+  width: fit-content;
+  max-width: 60ch;
+  padding: 5% 5%;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    border: 2px solid var(--color-green-dark);
-    border-radius: 1em;
+  border: 2px solid var(--color-green-dark);
+  border-radius: 1em;
 
-    box-shadow: 0px 0px 20px 20px black;
+  box-shadow: 0px 0px 20px 20px black;
+}
+
+.text-s {
+  font-size: small;
 }
 
 .popup > .closeBtn {
-	background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 
-    position: absolute;
-    top: 2%;
-    right: 2%;
-    width: 7%;
-    min-width: 32px;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  width: 7%;
+  min-width: 32px;
+  max-width: 64px;
 }
 
 .closeBtn > svg {
-    fill: var(--color-green-light);
-    filter: grayscale(1);
+  fill: var(--color-green-light);
+  filter: grayscale(1);
 }
 
 .closeBtn > svg:hover,
 .closeBtn > svg:active,
 .closeBtn > svg:focus {
-    filter: grayscale(0);
+  filter: grayscale(0);
 }
 
-.popup > .title {
-    text-transform: uppercase;
-    font-family: 'Inconsolata', monospace;
-    width: fit-content;
+.popup > .title,
+.popup > a > .title {
+  text-transform: uppercase;
+  font-family: "Inconsolata", monospace;
+  width: fit-content;
 
-    margin-bottom: 5%;
+  margin-bottom: 5%;
 
-    border-bottom: 2px solid var(--color-green-light);
+  border-bottom: 2px solid var(--color-green-light);
+}
+
+.popup > a {
+  text-decoration: none;
+  width: fit-content;
 }
 
 .popup > .date-location {
-    font-family: 'Inconsolata', monospace;
-    width: fit-content;
-    margin-left: auto;
-    margin-bottom: 5%;
-    padding: 2%;
-    border-left: 2px solid var(--color-green-light);
-    border-radius: 1em;
+  font-family: "Inconsolata", monospace;
+  width: fit-content;
+  margin-left: auto;
+  margin-bottom: 5%;
+  padding: 2%;
+  border-left: 2px solid var(--color-green-light);
+  border-radius: 1em;
 }
 
 .date-location > .date::before {
-    content: "Date: "
+  content: "Date: ";
 }
 
 .date-location > .location::before {
-    content: "Location: "
+  content: "Location: ";
 }
 
 .popup > .description-container {
-    position: relative;
-    max-width: 60ch;
-    text-align: justify;
+  position: relative;
+  max-width: 60ch;
+  text-align: justify;
+  margin: 0 auto;
 }
 
 .description-container > .description::before {
-    position: absolute;
-    top: -65px;
-    content: open-quote;
-    font-size: 7em;
-    color: var(--color-green-light);
+  content: open-quote;
+  position: absolute;
+  top: -70px;
+  font-size: 7em;
+  color: var(--color-green-light);
 }
 
-.popup > img.image {
-    border-radius: 1em;
-    width: 80%;
-    align-self: center;
-    margin: 3% 0;
+.popup > .image {
+  border-radius: 1em;
+  width: 100%;
+  align-self: center;
+  margin: 3% 0;
 }
 
-@media screen and (max-width: 600px){
-    .popup-container {
-        left: 0;
-    }
+.popup > .footnote {
+  font-style: italic;
+  font-size: smaller;
+}
 
-    .popup > img.image {
-        width: 100%;
-    }
+@media screen and (max-width: 600px) {
+  .popup-container {
+    left: 0;
+  }
+
+  .popup > img.image {
+    width: 100%;
+  }
 }
