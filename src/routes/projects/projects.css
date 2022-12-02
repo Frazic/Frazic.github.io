@@ -22,7 +22,7 @@
   position: relative;
   flex-direction: column;
   height: 10vh;
-  width: 50vw;
+  width: 60vw;
   min-width: 9rem;
   min-height: 4rem;
   max-width: 12rem;
@@ -198,11 +198,11 @@ ul.tags {
     opacity: 0;
     animation: slideInFromLeft var(--transition-speed);
     animation-fill-mode: forwards;
-    margin-top: 10vh;
+    margin-top: 0;
   }
 
   .card {
-    height: 30vh;
+    height: 30vw;
     max-height: 15rem;
   }
 
