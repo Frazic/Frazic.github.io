@@ -393,8 +393,8 @@ export default component$(() => {
           }}
         >
           <header className="card-header">
-            <p>2014</p>
-            <h2>Tracking Solar Panel</h2>
+            <p>2015</p>
+            <h2>Bracelight</h2>
           </header>
 
           <div className="card-author">
