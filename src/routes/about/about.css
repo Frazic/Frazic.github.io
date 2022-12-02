@@ -261,7 +261,7 @@ section.background {
 
 .likes-container > .like {
   grid-column: 1;
-  background-image: url("/about-img/flowers2.webp");
+  background-image: url("/about-img/flowers.webp");
   background-attachment: local;
   background-repeat: no-repeat;
   background-size: 60%;
