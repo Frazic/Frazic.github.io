@@ -127,7 +127,7 @@ section.background {
 .rpgme-container > .image-container {
   grid-area: image;
   align-self: center;
-  background-image: url("/about-img/canyon.jpg");
+  background-image: url("/about-img/josh-wedding.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

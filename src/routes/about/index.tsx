@@ -210,7 +210,7 @@ export default component$(() => {
               </ul>
             </div>
           </div>
-          <img className="img-shadow" src="/about-img/mountains.webp" alt="" />
+          <img className="img-shadow" src="/about-img/aspire_albanus.webp" alt="" />
         </div>
       </section>
 
