@@ -13,7 +13,8 @@ export interface ProjectPopUpContentStore {
     location: string
     description: string,
     imageSrc: string,
-    footnote?: string
+    footnote?: string,
+    scrollY: number
 }
 
 export const ProjectPopUp = component$<ProjectPopUpProps>((props) => {
@@ -35,6 +36,7 @@ export const ProjectPopUp = component$<ProjectPopUpProps>((props) => {
             props.store.description = "";
             props.store.imageSrc = "";
             props.store.footnote = "";
+            props.store.scrollY = 0;
         }
 
         if (ref?.value) {
@@ -49,7 +51,8 @@ export const ProjectPopUp = component$<ProjectPopUpProps>((props) => {
     });
 
     return (
-        <div className={"popup-container" + (props.store.isActive ? " active" : "")}>
+        <div className={"popup-container" + (props.store.isActive ? " active" : "")}
+            style={{ "--scroll-y": props.store.scrollY + "px" }}>
             <div ref={ref} tabIndex={0} className="popup">
                 <button tabIndex={0} className="closeBtn" onClick$={() => props.store.isActive = false}>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm3.707,12.293a1,1,0,1,1-1.414,1.414L12,13.414,9.707,15.707a1,1,0,0,1-1.414-1.414L10.586,12,8.293,9.707A1,1,0,0,1,9.707,8.293L12,10.586l2.293-2.293a1,1,0,0,1,1.414,1.414L13.414,12Z" /></svg>
@@ -69,7 +72,7 @@ export const ProjectPopUp = component$<ProjectPopUpProps>((props) => {
                 }
 
                 {props.store.imageSrc.split(".").at(-1) === "webm" &&
-                    <video loop muted autoPlay playsInline>
+                    <video className="image" loop muted autoPlay playsInline>
                         <source type="video/webm" src={props.store.imageSrc} />
                     </video>
                 }

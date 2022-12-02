@@ -10,6 +10,8 @@
 
     transform: scale(0);
     transition: transform 120ms ease-in-out;
+
+    --scroll-y: 0;
 }
 
 .popup-container.active {
@@ -20,7 +22,7 @@
     position: relative;
     background-color: var(--color-purple-darkest);
     z-index: 999;
-    margin: 5% auto;
+    margin: calc(var(--scroll-y) + 5%) auto;
     width: fit-content;
     max-width: 60ch;
     padding: 5% 5%;
@@ -115,7 +117,7 @@
     color: var(--color-green-light);
 }
 
-.popup > img.image {
+.popup > .image {
     border-radius: 1em;
     width: 100%;
     align-self: center;
