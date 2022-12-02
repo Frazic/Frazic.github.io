@@ -20,13 +20,13 @@ export default component$(() => {
 
         <div className="rpgme-background">
           <div className="rpgme-container">
-
             {/* HEADER */}
             <div className="header-container">
               <span className="char-name text-xl">Frazic</span>
               <div className="class-level-container">
                 <span className="class text-l">Fullstack Developer</span>
-                <span className="level text-l"><span className="text-m">lvl: </span>
+                <span className="level text-l">
+                  <span className="text-m">lvl: </span>
                   {getAge()}
                 </span>
               </div>
@@ -72,22 +72,42 @@ export default component$(() => {
               <div className="like">
                 <span className="text-l uppercase">Likes</span>
                 <ul className="text-l">
-                  <li><span className="text-m">❤️</span> Cooking</li>
-                  <li><span className="text-m">❤️</span> Capybaras</li>
-                  <li><span className="text-m">❤️</span> Plants</li>
-                  <li><span className="text-m">❤️</span> Accordion</li>
-                  <li><span className="text-m">❤️</span> Role Playing</li>
+                  <li>
+                    <span className="text-m">❤️</span> Cooking
+                  </li>
+                  <li>
+                    <span className="text-m">❤️</span> Capybaras
+                  </li>
+                  <li>
+                    <span className="text-m">❤️</span> Plants
+                  </li>
+                  <li>
+                    <span className="text-m">❤️</span> Accordion
+                  </li>
+                  <li>
+                    <span className="text-m">❤️</span> Role Playing
+                  </li>
                   <li className="text-m">😮 (I made the backgrounds!)</li>
                 </ul>
               </div>
               <div className="dislike">
                 <span className="text-l uppercase">Dislikes</span>
                 <ul className="text-l">
-                  <li><span className="text-m">💀</span> Intolerance</li>
-                  <li><span className="text-m">💀</span> Gore</li>
-                  <li><span className="text-m">💀</span> Meat</li>
-                  <li><span className="text-m">💀</span> Sexism</li>
-                  <li><span className="text-m">💀</span> Close-mindedness</li>
+                  <li>
+                    <span className="text-m">💀</span> Intolerance
+                  </li>
+                  <li>
+                    <span className="text-m">💀</span> Gore
+                  </li>
+                  <li>
+                    <span className="text-m">💀</span> Meat
+                  </li>
+                  <li>
+                    <span className="text-m">💀</span> Sexism
+                  </li>
+                  <li>
+                    <span className="text-m">💀</span> Close-mindedness
+                  </li>
                 </ul>
               </div>
             </div>
@@ -108,7 +128,6 @@ export default component$(() => {
                 </ul>
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -354,5 +373,10 @@ export default component$(() => {
 
 export const head: DocumentHead = {
   title: "Frazic - About",
-  links: [{ rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" }]
+  links: [
+    {
+      rel: "stylesheet",
+      href: "https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap",
+    },
+  ],
 };

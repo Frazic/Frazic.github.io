@@ -78,7 +78,7 @@
   cursor: pointer;
 }
 
-.card:hover .card-header h2  {
+.card:hover .card-header h2 {
   background: linear-gradient(
     90deg,
     var(--color-green-light),

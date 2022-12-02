@@ -72,7 +72,7 @@ section.background {
 }
 
 .rpgme-container {
-  font-family: 'Patrick Hand', cursive;
+  font-family: "Patrick Hand", cursive;
 
   display: grid;
   grid-template:
@@ -172,8 +172,8 @@ section.background {
   text-align: center;
   display: grid;
   grid-template:
-  "header header"
-  "e e";
+    "header header"
+    "e e";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 3vw 1fr;
   row-gap: 1vw;
@@ -192,8 +192,8 @@ section.background {
   grid-area: e;
   display: grid;
   grid-template-areas:
-  "one two"
-  "three four";
+    "one two"
+    "three four";
   row-gap: 3vw;
   column-gap: 3vw;
 }
@@ -306,7 +306,7 @@ section.background {
   border: 1px solid rgb(39, 37, 37);
 }
 
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 1023px) {
   .text-xl {
     font-size: 4vw;
   }

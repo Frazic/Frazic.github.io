@@ -135,7 +135,8 @@
     overflow-x: scroll;
   }
 
-  .navbar:hover, .navbar:active {
+  .navbar:hover,
+  .navbar:active {
     --navbar-width: 3rem;
   }
 
