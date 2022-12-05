@@ -130,7 +130,7 @@ section.background {
   background-image: url("/about-img/josh-wedding.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   border-radius: 1em;
   height: 90%;
   box-shadow: inset 4px 4px 10px 0px black;

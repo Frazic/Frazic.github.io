@@ -112,7 +112,7 @@ footer {\
               tooltipStore={tooltipStore}
               items={[
                 {
-                  name: "ASP.NET",
+                  name: "Razor",
                   tooltip:
                     "Microsoft framework for creating dynamic web pages built on C#. This was my main tool for working at the University of Southampton.",
                   iconSrc: "/icons/asp-net.png",
@@ -120,19 +120,11 @@ footer {\
                 },
                 { name: "space" },
                 {
-                  name: "PHP",
-                  tooltip:
-                    "Scripting language oriented towards web development. I used this to work on the University of Southampton's major update to their website.",
-                  iconSrc: "/icons/php.png",
-                  background: "#4C193E",
-                },
-                { name: "space" },
-                {
                   name: "HTML",
                   tooltip:
                     "Standard markup language for web pages, used to design the layout and ways of interacting with the page.",
                   iconSrc: "/icons/html.png",
-                  background: "#570B42",
+                  background: "#4C193E",
                 },
                 { name: "link" },
                 {
@@ -140,7 +132,7 @@ footer {\
                   tooltip:
                     "Styling language for webpages, allows them to look good.",
                   iconSrc: "/icons/css.png",
-                  background: "#770658",
+                  background: "#570B42",
                 },
               ]}
             />
@@ -205,11 +197,19 @@ footer {\
               tooltipStore={tooltipStore}
               items={[
                 {
+                  name: "PHP",
+                  tooltip:
+                    "Scripting language oriented towards web development. I used this to work on the University of Southampton's major update to their website.",
+                  iconSrc: "/icons/php.png",
+                  background: "#443A20",
+                },
+                { name: "space" },
+                {
                   name: "C",
                   tooltip:
                     "An absolute unit of a standard programming language that pretty much everything else seems to be built on. Essential to understand how machines work on a low-level and still the go-to for embedded systems.",
                   iconSrc: "/icons/c.png",
-                  background: "#443A20",
+                  background: "#665421",
                 },
                 { name: "link" },
                 {
@@ -217,7 +217,7 @@ footer {\
                   tooltip:
                     "An evolution of C which includes object-orientation. One of the most common languages for backend-only applications",
                   iconSrc: "/icons/c++.png",
-                  background: "#665421",
+                  background: "#745A0F",
                 },
                 { name: "link" },
                 {
@@ -225,7 +225,7 @@ footer {\
                   tooltip:
                     "Pronounced C-Sharp, this general purpose language was designed to be simple, modern and encompass important software-engineering concepts not present in C/C++.",
                   iconSrc: "/icons/csharp.png",
-                  background: "#745A0F",
+                  background: "#a88418",
                 },
               ]}
             />
