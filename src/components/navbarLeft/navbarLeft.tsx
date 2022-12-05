@@ -7,7 +7,6 @@ export default component$(() => {
   return (
     <nav class="navbar">
       <ul class="navbar-nav">
-
         {/* LOGO */}
         <li class="logo" role="button">
           <div class="nav-link">

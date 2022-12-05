@@ -61,7 +61,9 @@ export const ProjectPopUp = component$<ProjectPopUpProps>((props) => {
       id="popup-container"
       className={"popup-container" + (props.store.isActive ? " active" : "")}
       style={{ "--scroll-y": props.store.scrollY + "px" }}
-      document:onKeyUp$={(ev) => { if (ev.key === "Escape") props.store.isActive = false; }}
+      document:onKeyUp$={(ev) => {
+        if (ev.key === "Escape") props.store.isActive = false;
+      }}
     >
       <div id="popup" ref={ref} tabIndex={0} className="popup">
         <button

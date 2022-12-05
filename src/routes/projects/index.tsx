@@ -1,4 +1,9 @@
-import { component$, useStyles$, useStore, useClientEffect$ } from "@builder.io/qwik";
+import {
+  component$,
+  useStyles$,
+  useStore,
+  useClientEffect$,
+} from "@builder.io/qwik";
 import { DocumentHead } from "@builder.io/qwik-city";
 import {
   ProjectPopUp,
@@ -24,16 +29,17 @@ export default component$(() => {
   // Disables body scroll when a popup is open
   useClientEffect$(({ track }) => {
     track(popUpContentStore);
-    document.body.style.overflowY = popUpContentStore.isActive ? "hidden" : "auto";
+    document.body.style.overflowY = popUpContentStore.isActive
+      ? "hidden"
+      : "auto";
     document.body.ariaHidden = popUpContentStore.isActive ? "true" : "false";
     if (popUpContentStore.isActive) document.getElementById("popup")?.focus();
-  })
+  });
 
   const scrollBtnAmount = 500;
 
   return (
-    <div
-    >
+    <div>
       <ProjectPopUp store={popUpContentStore} />
 
       <h1>Projects</h1>
@@ -53,7 +59,8 @@ export default component$(() => {
               popUpContentStore.location = "Åland";
               popUpContentStore.description =
                 "To follow our autonomous sailboat I was tasked with processing the live data we were receiving from it and displaying it on a map. For this I used the Google Maps API to display all the available relevant information.";
-              popUpContentStore.imageSrc = "/projects/aspire_live_tracking.webm";
+              popUpContentStore.imageSrc =
+                "/projects/aspire_live_tracking.webm";
               popUpContentStore.footnote =
                 "The site requires admin access so I can't give you a link :c";
               popUpContentStore.scrollY = window.scrollY;
@@ -298,13 +305,28 @@ export default component$(() => {
         </section>
 
         {/* Scroll Buttons */}
-        <button className="scrollBtn left" role={"button"} onClick$={() => { document.getElementById("card-list-software")?.scrollBy({ left: -scrollBtnAmount, behavior: "smooth" }) }}>
+        <button
+          className="scrollBtn left"
+          role={"button"}
+          onClick$={() => {
+            document
+              .getElementById("card-list-software")
+              ?.scrollBy({ left: -scrollBtnAmount, behavior: "smooth" });
+          }}
+        >
           {"<"}
         </button>
-        <button className="scrollBtn right" role={"button"} onClick$={() => { document.getElementById("card-list-software")?.scrollBy({ left: scrollBtnAmount, behavior: "smooth" }) }}>
+        <button
+          className="scrollBtn right"
+          role={"button"}
+          onClick$={() => {
+            document
+              .getElementById("card-list-software")
+              ?.scrollBy({ left: scrollBtnAmount, behavior: "smooth" });
+          }}
+        >
           {">"}
         </button>
-
       </div>
 
       <h2>Others</h2>
@@ -529,13 +551,28 @@ export default component$(() => {
         </section>
 
         {/* Scroll Buttons */}
-        <button className="scrollBtn left" role={"button"} onClick$={() => { document.getElementById("card-list-others")?.scrollBy({ left: -scrollBtnAmount, behavior: "smooth" }) }}>
+        <button
+          className="scrollBtn left"
+          role={"button"}
+          onClick$={() => {
+            document
+              .getElementById("card-list-others")
+              ?.scrollBy({ left: -scrollBtnAmount, behavior: "smooth" });
+          }}
+        >
           {"<"}
         </button>
-        <button className="scrollBtn right" role={"button"} onClick$={() => { document.getElementById("card-list-others")?.scrollBy({ left: scrollBtnAmount, behavior: "smooth" }) }}>
+        <button
+          className="scrollBtn right"
+          role={"button"}
+          onClick$={() => {
+            document
+              .getElementById("card-list-others")
+              ?.scrollBy({ left: scrollBtnAmount, behavior: "smooth" });
+          }}
+        >
           {">"}
         </button>
-
       </div>
     </div>
   );
