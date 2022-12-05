@@ -212,6 +212,10 @@ hr.hr-index {
   justify-content: center;
 }
 
+.descriptors > a {
+  text-decoration: none;
+}
+
 .descriptors ul {
   --animation-speed: 500ms;
   display: flex;
