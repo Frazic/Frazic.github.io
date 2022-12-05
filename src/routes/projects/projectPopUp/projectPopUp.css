@@ -3,13 +3,16 @@
   z-index: 998;
   left: var(--navbar-width);
   right: 0;
-  top: 0;
+  top: var(--scroll-y);
   bottom: 0;
-  min-width: fit-content;
-  min-height: fit-content;
+
+  height: 100vh;
+  overflow-y: auto;
 
   transform: scale(0);
   transition: transform 120ms ease-in-out;
+
+  background-color: rgba(0, 0, 0, 0.5);
 
   --scroll-y: 0;
 }
@@ -22,7 +25,7 @@
   position: relative;
   background-color: var(--color-purple-darkest);
   z-index: 999;
-  margin: calc(var(--scroll-y) + 5%) auto;
+  margin: 5% auto;
   width: fit-content;
   max-width: 60ch;
   padding: 5% 5%;
@@ -102,7 +105,7 @@
   content: "Location: ";
 }
 
-.popup > .description-container {
+.description-container {
   position: relative;
   max-width: 60ch;
   text-align: justify;
@@ -117,7 +120,7 @@
   color: var(--color-green-light);
 }
 
-.popup > .image {
+.image {
   border-radius: 1em;
   width: 100%;
   align-self: center;
@@ -125,13 +128,18 @@
 }
 
 .popup > .footnote {
+  margin-top: 2vw;
   font-style: italic;
   font-size: smaller;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 601px) {
   .popup-container {
     left: 0;
+  }
+
+  .popup-container > .popup {
+    margin: 5% 1% calc(var(--navbar-width));
   }
 
   .popup > img.image {

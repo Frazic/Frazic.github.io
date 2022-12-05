@@ -1,4 +1,4 @@
-import { component$, useStyles$, useStore } from "@builder.io/qwik";
+import { component$, useStyles$, useStore, useClientEffect$ } from "@builder.io/qwik";
 import { DocumentHead } from "@builder.io/qwik-city";
 import {
   ProjectPopUp,
@@ -20,6 +20,12 @@ export default component$(() => {
     footnote: "",
     scrollY: 0,
   });
+
+  // Disables body scroll when a popup is open
+  useClientEffect$(({ track }) => {
+    track(popUpContentStore);
+    document.body.style.overflowY = popUpContentStore.isActive ? "hidden" : "auto";
+  })
 
   const scrollBtnAmount = 500;
 

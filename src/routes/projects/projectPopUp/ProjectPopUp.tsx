@@ -57,10 +57,11 @@ export const ProjectPopUp = component$<ProjectPopUpProps>((props) => {
 
   return (
     <div
+      id="popup-container"
       className={"popup-container" + (props.store.isActive ? " active" : "")}
       style={{ "--scroll-y": props.store.scrollY + "px" }}
     >
-      <div ref={ref} tabIndex={0} className="popup">
+      <div id="popup" ref={ref} tabIndex={0} className="popup">
         <button
           tabIndex={0}
           className="closeBtn"
