@@ -25,12 +25,15 @@ export default component$(() => {
   useClientEffect$(({ track }) => {
     track(popUpContentStore);
     document.body.style.overflowY = popUpContentStore.isActive ? "hidden" : "auto";
+    document.body.ariaHidden = popUpContentStore.isActive ? "true" : "false";
+    if (popUpContentStore.isActive) document.getElementById("popup")?.focus();
   })
 
   const scrollBtnAmount = 500;
 
   return (
-    <div>
+    <div
+    >
       <ProjectPopUp store={popUpContentStore} />
 
       <h1>Projects</h1>
