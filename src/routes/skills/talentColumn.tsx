@@ -133,7 +133,9 @@ export const TalentItem = component$((props: TalentItemProps) => {
         style={getStyle()}
         className={props.isActive ? "talent-item active" : "talent-item"}
         onClick$={onClickItem$}
-        onKeyUp$={(ev) => { if (ev.key === "Enter") onClickItem$() }}
+        onKeyUp$={(ev) => {
+          if (ev.key === "Enter") onClickItem$();
+        }}
       >
         {props.iconSrc && (
           <img

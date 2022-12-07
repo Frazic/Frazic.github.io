@@ -52,8 +52,15 @@ footer {\
 }}"}
       </style>
       <h1>Skills</h1>
-      <div className="tree-grid"
-        document:onKeyUp$={(ev) => { if (ev.key === "Escape") { tooltipStore.text = ""; tooltipStore.title = ""; } }}>
+      <div
+        className="tree-grid"
+        document:onKeyUp$={(ev) => {
+          if (ev.key === "Escape") {
+            tooltipStore.text = "";
+            tooltipStore.title = "";
+          }
+        }}
+      >
         <div
           className={isTree1Active.value ? "tree tree-1-active" : "tree tree-1"}
         >
@@ -347,10 +354,15 @@ footer {\
           {tooltipStore.text}
         </span>
 
-        <button className="closeBtn" onClick$={() => {
-          tooltipStore.text = "";
-          tooltipStore.title = "";
-        }}>X</button>
+        <button
+          className="closeBtn"
+          onClick$={() => {
+            tooltipStore.text = "";
+            tooltipStore.title = "";
+          }}
+        >
+          X
+        </button>
       </h4>
     </>
   );
