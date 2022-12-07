@@ -372,6 +372,9 @@ export default component$(() => {
           </div>
         </div>
       </section>
+
+      <button className="scrollTopBtn"
+        onClick$={() => { window.scrollTo({ top: 0, behavior: "smooth" }) }}>↑</button>
     </>
   );
 });

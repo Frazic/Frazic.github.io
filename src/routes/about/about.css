@@ -664,6 +664,29 @@ section.background {
   cursor: help;
 }
 
+.scrollTopBtn {
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+
+  background-color: var(--color-purple-dark);
+  color: var(--color-purple-lightest);
+  font-size: xx-large;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 5%;
+  right: 2%;
+}
+
+:is(.scrollTopBtn:hover, .scrollTopBtn:active, .scrollTopBtn:focus-visible) {
+  scale: 1.25;
+  outline: 2px solid var(--color-green-lightest);
+}
+
 @media screen and (max-width: 1219px) {
   .work-grid-container {
     column-gap: 1vw;
