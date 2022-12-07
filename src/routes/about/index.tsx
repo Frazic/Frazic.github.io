@@ -136,7 +136,7 @@ export default component$(() => {
       <section
         id="studies"
         className="background"
-        style={{ "background-image": "url('/about-img/TODO_NAME.webp')" }}
+        style={{ "background-image": "url('/about-img/mythodea.webp')" }}
       >
         <div className="container-flex">
           <div className="text-flex">
