@@ -61,6 +61,7 @@ footer {\
           }
         }}
         document:onClick$={(ev) => {
+          // @ts-ignore
           const classList = ev.target.classList; // TS hates this but it is actually a thing!
           if (
             !(
