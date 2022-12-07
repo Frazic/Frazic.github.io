@@ -20,6 +20,7 @@ export default component$(() => {
 
         <div className="rpgme-background">
           <div className="rpgme-container">
+
             {/* HEADER */}
             <div className="header-container">
               <span className="char-name text-xl">Frazic</span>
@@ -87,7 +88,7 @@ export default component$(() => {
                   <li>
                     <span className="text-m">❤️</span> Role Playing
                   </li>
-                  <li className="text-m">😮 (I made the backgrounds!)</li>
+                  <li className="text-m"> (I made the backgrounds!)</li>
                 </ul>
               </div>
               <div className="dislike">
@@ -140,7 +141,7 @@ export default component$(() => {
       >
         <div className="container-flex">
           <div className="text-flex">
-            <h2 className="header">🧐 Studies</h2>
+            <h2 className="header">🧙 Studies</h2>
             <div className="text-box">
               I am grateful to have lived and studied in France, which allowed
               me to explore my needs and desires as I went through my journey to
