@@ -242,7 +242,7 @@
     width: calc(100% - calc(2 * var(--navbar-width)));
     display: none;
 
-    box-shadow: 0 0 100vmax 100vmax black;
+    box-shadow: 0 0 100vmax 100vmax rgba(0, 0, 0, 0.5);
   }
 
   .tooltip.active {
