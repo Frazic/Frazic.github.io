@@ -327,6 +327,7 @@ footer {\
       </div>
 
       <h4
+        id="tooltip"
         className={
           "tooltip" +
           (tooltipStore.title != "" && treeIsActive ? " active" : "")
@@ -334,6 +335,7 @@ footer {\
         style={treeIsActive ? {} : { opacity: "0" }}
       >
         <span
+          id="tooltip-text"
           className={
             "tooltip-text" + (tooltipStore.text != "" ? " active" : "")
           }
@@ -343,6 +345,11 @@ footer {\
           </u>{" "}
           {tooltipStore.text}
         </span>
+
+        <button className="closeBtn" onClick$={() => {
+          tooltipStore.text = "";
+          tooltipStore.title = "";
+        }}>X</button>
       </h4>
     </>
   );

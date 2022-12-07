@@ -141,6 +141,7 @@
   min-height: 6vh;
   word-break: keep-all;
   padding: 5px 5px;
+  margin-inline: auto;
   border: 2px dashed var(--color-green-mid);
   border-radius: 0.25em;
   background-color: var(--color-purple-darkest);
@@ -162,6 +163,10 @@
 
 .tooltip.active > .tooltip-text {
   animation: fadeIn 0.5s forwards;
+}
+
+.tooltip > button.closeBtn {
+  display: none;
 }
 
 .talent-column > .active {
@@ -230,7 +235,39 @@
   }
 
   .tooltip {
-    margin: auto;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    bottom: 10%;
+    left: calc(50% + calc(var(--navbar-width) / 2));
+    width: calc(100% - calc(2 * var(--navbar-width)));
+    display: none;
+
+    box-shadow: 0 0 100vmax 100vmax black;
+  }
+
+  .tooltip.active {
+    display: unset;
+  }
+
+  .tooltip > button.closeBtn {
+    /* background: none; */
+    /* color: inherit; */
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+
+    display: unset;
+    position: absolute;
+    right: 0%;
+    top: -40px;
+
+    background-color: var(--color-purple-dark);
+    color: var(--color-purple-lightest);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
   }
 }
 
@@ -255,5 +292,10 @@
   .talent-item > img {
     max-width: unset;
     width: 6vw;
+  }
+
+  .tooltip {
+    left: 50%;
+    width: 90%;
   }
 }
