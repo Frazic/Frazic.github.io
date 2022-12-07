@@ -32,6 +32,7 @@ section.background {
   margin: 0 auto 1em;
   border-radius: 0.25em;
   text-transform: uppercase;
+  box-shadow: 3px 3px 5px 0px var(--color-purple-darkest);
 }
 
 /* ME */
@@ -489,6 +490,7 @@ section.background {
   border-radius: 0.25em;
   margin-bottom: 1em;
   align-self: center;
+  box-shadow: 3px 3px 5px 0px var(--color-purple-darkest);
 }
 
 .text-box {
@@ -499,6 +501,8 @@ section.background {
   color: var(--color-purple-lightest);
   border-radius: 1em;
   text-align: justify;
+
+  box-shadow: 3px 3px 5px 0px var(--color-purple-darkest);
 }
 
 .list-no-bullet {
@@ -585,6 +589,7 @@ section.background {
   width: 40%;
   padding: 0.5em 1em;
   border-radius: 0.25em;
+  box-shadow: 3px 3px 5px 0px var(--color-purple-darkest);
 }
 
 .work-grid-container > .col-1 {
@@ -610,6 +615,7 @@ section.background {
   background-color: var(--color-purple-dark-transparent);
   border-radius: 1em;
   justify-content: space-between;
+  box-shadow: 3px 3px 5px 0px var(--color-purple-darkest);
 }
 
 .item > .text-container {
