@@ -20,7 +20,6 @@ export default component$(() => {
 
         <div className="rpgme-background">
           <div className="rpgme-container">
-
             {/* HEADER */}
             <div className="header-container">
               <span className="char-name text-xl">Frazic</span>
@@ -373,8 +372,14 @@ export default component$(() => {
         </div>
       </section>
 
-      <button className="scrollTopBtn"
-        onClick$={() => { window.scrollTo({ top: 0, behavior: "smooth" }) }}>↑</button>
+      <button
+        className="scrollTopBtn"
+        onClick$={() => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }}
+      >
+        ↑
+      </button>
     </>
   );
 });

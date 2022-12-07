@@ -61,8 +61,17 @@ footer {\
           }
         }}
         document:onClick$={(ev) => {
-          const classList = ev.target.classList;
-          if (!(classList.contains("talent-item") || classList.contains("talent-item-image") || classList.contains("talent-item-name"))) {
+          const classList = ev.target.classList; // TS hates this but it is actually a thing!
+          if (
+            !(
+              classList.contains("talent-item") ||
+              classList.contains("talent-item-image") ||
+              classList.contains("talent-item-name") ||
+              classList.contains("tooltip") ||
+              classList.contains("tooltip-text") ||
+              classList.contains("tooltip-title")
+            )
+          ) {
             tooltipStore.text = "";
             tooltipStore.title = "";
           }
