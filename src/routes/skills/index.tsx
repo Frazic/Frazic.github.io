@@ -60,6 +60,13 @@ footer {\
             tooltipStore.title = "";
           }
         }}
+        document:onClick$={(ev) => {
+          const classList = ev.target.classList;
+          if (!(classList.contains("talent-item") || classList.contains("talent-item-image") || classList.contains("talent-item-name"))) {
+            tooltipStore.text = "";
+            tooltipStore.title = "";
+          }
+        }}
       >
         <div
           className={isTree1Active.value ? "tree tree-1-active" : "tree tree-1"}

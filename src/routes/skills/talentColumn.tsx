@@ -139,11 +139,14 @@ export const TalentItem = component$((props: TalentItemProps) => {
       >
         {props.iconSrc && (
           <img
+            className="talent-item-image"
             src={props.iconSrc}
             alt={props.iconSrc.split("/").at(-1)?.split(".").at(0)}
           />
         )}
-        <span>{props.name}</span>
+        <span
+          className="talent-item-name">{props.name}
+        </span>
       </div>
     </>
   );
