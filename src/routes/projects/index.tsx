@@ -47,6 +47,44 @@ export default component$(() => {
       <h2>Software</h2>
       <div className="card-list-container">
         <section id="card-list-software" className="card-list">
+          {/* Kabdalis Dom */}
+          <article
+            className="card"
+            tabIndex={0}
+            onClick$={() => {
+              popUpContentStore.isActive = true;
+              popUpContentStore.title = "Kåbdalis";
+              popUpContentStore.url = "https://kabdalis.be/";
+              popUpContentStore.date = "January 2023";
+              popUpContentStore.location = "France";
+              popUpContentStore.description =
+                "A family friend rents out his house in Sweden and needed his website to be revamped and look modern and attractive";
+              popUpContentStore.imageSrc =
+                "/projects/kabdalis.webp";
+              popUpContentStore.footnote = "";
+              popUpContentStore.scrollY = window.scrollY;
+            }}
+          >
+            <header className="card-header">
+              <p>January 2023</p>
+              <h2>Kåbdalis</h2>
+            </header>
+            <div className="card-author">
+              <div className="author-avatar">
+                <img src="/avatar.png" alt="avatar" />
+              </div>
+              <svg class="half-circle" viewBox="0 0 106 57">
+                <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+              </svg>
+              <div className="author-name">Frazic</div>
+            </div>
+            <ul className="tags">
+              <li>Webdesign</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </article>
+
           {/* Aspire tracking website */}
           <article
             className="card"
