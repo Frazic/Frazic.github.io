@@ -47,6 +47,120 @@ export default component$(() => {
       <h2>Software</h2>
       <div className="card-list-container">
         <section id="card-list-software" className="card-list">
+          {/* Gouttière */}
+          <article
+            className="card"
+            tabIndex={0}
+            onClick$={() => {
+              popUpContentStore.isActive = true;
+              popUpContentStore.title = "éditions de la Gouttière";
+              popUpContentStore.url = "";
+              popUpContentStore.date = "May 2023";
+              popUpContentStore.location = "France";
+              popUpContentStore.description =
+                "I was hired to revamp from scratch the éditions de la Gouttière website. This was a fullstack project with CMS, webdesign, a backend server, integration with a 3rd party store and everything else!";
+              popUpContentStore.imageSrc =
+                "/projects/gouttiere.webp";
+              popUpContentStore.footnote = "";
+              popUpContentStore.scrollY = window.scrollY;
+            }}
+          >
+            <header className="card-header">
+              <p>May 2023</p>
+              <h2>éditions de la Gouttière</h2>
+            </header>
+            <div className="card-author">
+              <div className="author-avatar">
+                <img src="/avatar.png" alt="avatar" />
+              </div>
+              <svg class="half-circle" viewBox="0 0 106 57">
+                <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+              </svg>
+              <div className="author-name">Frazic</div>
+            </div>
+            <ul className="tags">
+              <li>Webflow</li>
+              <li>CMS</li>
+              <li>Fullstack</li>
+            </ul>
+          </article>
+
+          {/* NetFeeling */}
+          <article
+            className="card"
+            tabIndex={0}
+            onClick$={() => {
+              popUpContentStore.isActive = true;
+              popUpContentStore.title = "NetFeeling";
+              popUpContentStore.url = "";
+              popUpContentStore.date = "April 2023";
+              popUpContentStore.location = "France";
+              popUpContentStore.description =
+                "With the increasing token limit of the GPT models, I built an app that scrapes tweets and passes them through GPT-4 to summarise and run sentiment analysis on";
+              popUpContentStore.imageSrc =
+                "/projects/netfeeling.webp";
+              popUpContentStore.footnote = "";
+              popUpContentStore.scrollY = window.scrollY;
+            }}
+          >
+            <header className="card-header">
+              <p>April 2023</p>
+              <h2>NetFeeling</h2>
+            </header>
+            <div className="card-author">
+              <div className="author-avatar">
+                <img src="/avatar.png" alt="avatar" />
+              </div>
+              <svg class="half-circle" viewBox="0 0 106 57">
+                <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+              </svg>
+              <div className="author-name">Frazic</div>
+            </div>
+            <ul className="tags">
+              <li>GPT</li>
+              <li>Sentiment</li>
+              <li>Webscraping</li>
+            </ul>
+          </article>
+
+          {/* Inclure.net */}
+          <article
+            className="card"
+            tabIndex={0}
+            onClick$={() => {
+              popUpContentStore.isActive = true;
+              popUpContentStore.title = "Inclure.net";
+              popUpContentStore.url = "https://inclure.net/";
+              popUpContentStore.date = "February 2023";
+              popUpContentStore.location = "France";
+              popUpContentStore.description =
+                "I wanted to use the power of AI to do something good: help transform text and make it more inclusive";
+              popUpContentStore.imageSrc =
+                "/projects/inclure.webp";
+              popUpContentStore.footnote = "";
+              popUpContentStore.scrollY = window.scrollY;
+            }}
+          >
+            <header className="card-header">
+              <p>February 2023</p>
+              <h2>Inclure.net</h2>
+            </header>
+            <div className="card-author">
+              <div className="author-avatar">
+                <img src="/avatar.png" alt="avatar" />
+              </div>
+              <svg class="half-circle" viewBox="0 0 106 57">
+                <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+              </svg>
+              <div className="author-name">Frazic</div>
+            </div>
+            <ul className="tags">
+              <li>GPT</li>
+              <li>Flask</li>
+              <li>Supabase</li>
+            </ul>
+          </article>
+
           {/* Kabdalis Dom */}
           <article
             className="card"
@@ -82,6 +196,229 @@ export default component$(() => {
               <li>Webdesign</li>
               <li>HTML</li>
               <li>CSS</li>
+            </ul>
+          </article>
+
+          {/* Blog */}
+          <article
+            className="card"
+            tabIndex={0}
+            onClick$={() => {
+              popUpContentStore.isActive = true;
+              popUpContentStore.title = "NextJS Blog";
+              popUpContentStore.url = ""; // TODO
+              popUpContentStore.date = "September 2022";
+              popUpContentStore.location = "France";
+              popUpContentStore.description =
+                "Wanting to learn NextJS I followed a course that lead to the creation of this blog. It was fun to learn all these new and promising skills, and as I usually do once I had finished, I challenged myself to go further than the course and apply what I had learned in doing something extra. In this case it was the theme changer.";
+              popUpContentStore.imageSrc = "/projects/nextjs_blog.webp";
+              popUpContentStore.footnote = "";
+              popUpContentStore.scrollY = window.scrollY;
+            }}
+          >
+            <header className="card-header">
+              <p>September 2022</p>
+              <h2>NextJS Blog</h2>
+            </header>
+            <div className="card-author">
+              <div className="author-avatar">
+                <img src="/avatar.png" alt="avatar" />
+              </div>
+              <svg class="half-circle" viewBox="0 0 106 57">
+                <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+              </svg>
+              <div className="author-name">Frazic</div>
+            </div>
+            <ul className="tags">
+              <li>NextJS</li>
+              <li>Firebase</li>
+              <li>Auth</li>
+            </ul>
+          </article>
+
+          {/* Genetic Algorithms */}
+          <article
+            className="card"
+            tabIndex={0}
+            onClick$={() => {
+              popUpContentStore.isActive = true;
+              popUpContentStore.title = "Genetic Algorithm";
+              popUpContentStore.url = "";
+              popUpContentStore.date = "Summer 2022";
+              popUpContentStore.location = "France";
+              popUpContentStore.description =
+                "The one annoying thing with my crypto bot was that the parameters had to be found manually by blindly testing. I wanted to automate that part of the process as well, and that's how I got into genetic algorithms to iteratively learn by the process of natural selection. It's a fascinating subject and surprisingly easy to get started!";
+              popUpContentStore.imageSrc = "";
+              popUpContentStore.footnote =
+                "I don't really have a picture for this one as it's just a script";
+              popUpContentStore.scrollY = window.scrollY;
+            }}
+          >
+            <header className="card-header">
+              <p>Summer 2022</p>
+              <h2>Genetic Algorithm</h2>
+            </header>
+            <div className="card-author">
+              <div className="author-avatar">
+                <img src="/avatar.png" alt="avatar" />
+              </div>
+              <svg class="half-circle" viewBox="0 0 106 57">
+                <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+              </svg>
+              <div className="author-name">Frazic</div>
+            </div>
+            <ul className="tags">
+              <li>Python</li>
+              <li>ML</li>
+              <li>Genetics</li>
+            </ul>
+          </article>
+
+          {/* Crypto bot */}
+          <article
+            className="card"
+            tabIndex={0}
+            onClick$={() => {
+              popUpContentStore.isActive = true;
+              popUpContentStore.title = "Crypto Bot";
+              popUpContentStore.url = "";
+              popUpContentStore.date = "Summer 2021";
+              popUpContentStore.location = "UK";
+              popUpContentStore.description =
+                "For a while I was interested in crypto currencies, and my mind just wouldn't stop gnawing at me with the idea that trading could be automated. So that's exactly what I set out to do. Spoiler alert: I didn't make any money as that was not the goal. Nevertheless it was a fascinating experience to delve into the maths of financial analysis and code a Python bot to interact with trading platform APIs.";
+              popUpContentStore.imageSrc = "/projects/tradingview.webp";
+              popUpContentStore.footnote = "";
+              popUpContentStore.scrollY = window.scrollY;
+            }}
+          >
+            <header className="card-header">
+              <p>Summer 2021</p>
+              <h2>Crypto Bot</h2>
+            </header>
+            <div className="card-author">
+              <div className="author-avatar">
+                <img src="/avatar.png" alt="avatar" />
+              </div>
+              <svg class="half-circle" viewBox="0 0 106 57">
+                <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+              </svg>
+              <div className="author-name">Frazic</div>
+            </div>
+            <ul className="tags">
+              <li>Python</li>
+              <li>API</li>
+              <li>Crypto</li>
+            </ul>
+          </article>
+
+          {/* Sound Circle */}
+          <article
+            className="card"
+            tabIndex={0}
+            onClick$={() => {
+              popUpContentStore.isActive = true;
+              popUpContentStore.title = "Sound Circle";
+              popUpContentStore.url = "https://frazic.github.io/Sound_Circle/";
+              popUpContentStore.date = "Summer 2020";
+              popUpContentStore.location = "Montreal";
+              popUpContentStore.description =
+                "I wanted to show sound in a creative way so I decided to give it a go like this! This work was done in collaboration with a marine mammal acoustician from NOAA.";
+              popUpContentStore.imageSrc = "/projects/sound_circle.webp";
+              popUpContentStore.footnote = "";
+              popUpContentStore.scrollY = window.scrollY;
+            }}
+          >
+            <header className="card-header">
+              <p>Summer 2020</p>
+              <h2>Sound Circle</h2>
+            </header>
+            <div className="card-author">
+              <div className="author-avatar">
+                <img src="/avatar.png" alt="avatar" />
+              </div>
+              <svg class="half-circle" viewBox="0 0 106 57">
+                <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+              </svg>
+              <div className="author-name">Frazic</div>
+            </div>
+            <ul className="tags">
+              <li>JS</li>
+              <li>P5js</li>
+              <li>Spectrogram</li>
+            </ul>
+          </article>
+
+          {/* Virtualisation */}
+          <article
+            className="card"
+            tabIndex={0}
+            onClick$={() => {
+              popUpContentStore.isActive = true;
+              popUpContentStore.title = "Virtualisation";
+              popUpContentStore.url = "";
+              popUpContentStore.date = "2019";
+              popUpContentStore.location = "France";
+              popUpContentStore.description =
+                "The machines used for testing at Naval Group were critical, yet getting older. My mission was to make them run virtually on a server in order to replace the physical simulation computers. This ensured backups, amongst other benefits!";
+              popUpContentStore.imageSrc = "";
+              popUpContentStore.footnote = "No pictures allowed!";
+              popUpContentStore.scrollY = window.scrollY;
+            }}
+          >
+            <header className="card-header">
+              <p>2019</p>
+              <h2>Virtualisation</h2>
+            </header>
+            <div className="card-author">
+              <div className="author-avatar">
+                <img src="/avatar.png" alt="avatar" />
+              </div>
+              <svg class="half-circle" viewBox="0 0 106 57">
+                <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+              </svg>
+              <div className="author-name">Frazic</div>
+            </div>
+            <ul className="tags">
+              <li>VMWare</li>
+              <li>Testing</li>
+              <li>Virtualisation</li>
+            </ul>
+          </article>
+
+          {/* Test automation */}
+          <article
+            className="card"
+            tabIndex={0}
+            onClick$={() => {
+              popUpContentStore.isActive = true;
+              popUpContentStore.title = "Test Automation";
+              popUpContentStore.url = "";
+              popUpContentStore.date = "2018";
+              popUpContentStore.location = "France";
+              popUpContentStore.description =
+                "Whilst working for Naval Group, I was tasked with automating a lot of the repetitive regression tests for the ship's OS. This task was excellent for me as I thoroughly enjoy finding ways of having a computer do the work for me.";
+              popUpContentStore.imageSrc = "";
+              popUpContentStore.footnote = "No pictures allowed!";
+              popUpContentStore.scrollY = window.scrollY;
+            }}
+          >
+            <header className="card-header">
+              <p>2018</p>
+              <h2>Test Automation</h2>
+            </header>
+            <div className="card-author">
+              <div className="author-avatar">
+                <img src="/avatar.png" alt="avatar" />
+              </div>
+              <svg class="half-circle" viewBox="0 0 106 57">
+                <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+              </svg>
+              <div className="author-name">Frazic</div>
+            </div>
+            <ul className="tags">
+              <li>Testing</li>
+              <li>EggPlant</li>
+              <li>Automation</li>
             </ul>
           </article>
 
@@ -121,223 +458,6 @@ export default component$(() => {
               <li>JavaScript</li>
               <li>PHP</li>
               <li>Maps API</li>
-            </ul>
-          </article>
-          {/* Sound Circle */}
-          <article
-            className="card"
-            tabIndex={0}
-            onClick$={() => {
-              popUpContentStore.isActive = true;
-              popUpContentStore.title = "Sound Circle";
-              popUpContentStore.url = "https://frazic.github.io/Sound_Circle/";
-              popUpContentStore.date = "Summer 2020";
-              popUpContentStore.location = "Montreal";
-              popUpContentStore.description =
-                "I wanted to show sound in a creative way so I decided to give it a go like this! This work was done in collaboration with a marine mammal acoustician from NOAA.";
-              popUpContentStore.imageSrc = "/projects/sound_circle.webp";
-              popUpContentStore.footnote = "";
-              popUpContentStore.scrollY = window.scrollY;
-            }}
-          >
-            <header className="card-header">
-              <p>Summer 2020</p>
-              <h2>Sound Circle</h2>
-            </header>
-            <div className="card-author">
-              <div className="author-avatar">
-                <img src="/avatar.png" alt="avatar" />
-              </div>
-              <svg class="half-circle" viewBox="0 0 106 57">
-                <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-              </svg>
-              <div className="author-name">Frazic</div>
-            </div>
-            <ul className="tags">
-              <li>JS</li>
-              <li>P5js</li>
-              <li>Spectrogram</li>
-            </ul>
-          </article>
-          {/* Blog */}
-          <article
-            className="card"
-            tabIndex={0}
-            onClick$={() => {
-              popUpContentStore.isActive = true;
-              popUpContentStore.title = "NextJS Blog";
-              popUpContentStore.url = ""; // TODO
-              popUpContentStore.date = "September 2022";
-              popUpContentStore.location = "France";
-              popUpContentStore.description =
-                "Wanting to learn NextJS I followed a course that lead to the creation of this blog. It was fun to learn all these new and promising skills, and as I usually do once I had finished, I challenged myself to go further than the course and apply what I had learned in doing something extra. In this case it was the theme changer.";
-              popUpContentStore.imageSrc = "/projects/nextjs_blog.webp";
-              popUpContentStore.footnote = "";
-              popUpContentStore.scrollY = window.scrollY;
-            }}
-          >
-            <header className="card-header">
-              <p>September 2022</p>
-              <h2>NextJS Blog</h2>
-            </header>
-            <div className="card-author">
-              <div className="author-avatar">
-                <img src="/avatar.png" alt="avatar" />
-              </div>
-              <svg class="half-circle" viewBox="0 0 106 57">
-                <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-              </svg>
-              <div className="author-name">Frazic</div>
-            </div>
-            <ul className="tags">
-              <li>NextJS</li>
-              <li>Firebase</li>
-              <li>Auth</li>
-            </ul>
-          </article>
-          {/* Crypto bot */}
-          <article
-            className="card"
-            tabIndex={0}
-            onClick$={() => {
-              popUpContentStore.isActive = true;
-              popUpContentStore.title = "Crypto Bot";
-              popUpContentStore.url = "";
-              popUpContentStore.date = "Summer 2021";
-              popUpContentStore.location = "UK";
-              popUpContentStore.description =
-                "For a while I was interested in crypto currencies, and my mind just wouldn't stop gnawing at me with the idea that trading could be automated. So that's exactly what I set out to do. Spoiler alert: I didn't make any money as that was not the goal. Nevertheless it was a fascinating experience to delve into the maths of financial analysis and code a Python bot to interact with trading platform APIs.";
-              popUpContentStore.imageSrc = "/projects/tradingview.webp";
-              popUpContentStore.footnote = "";
-              popUpContentStore.scrollY = window.scrollY;
-            }}
-          >
-            <header className="card-header">
-              <p>Summer 2021</p>
-              <h2>Crypto Bot</h2>
-            </header>
-            <div className="card-author">
-              <div className="author-avatar">
-                <img src="/avatar.png" alt="avatar" />
-              </div>
-              <svg class="half-circle" viewBox="0 0 106 57">
-                <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-              </svg>
-              <div className="author-name">Frazic</div>
-            </div>
-            <ul className="tags">
-              <li>Python</li>
-              <li>API</li>
-              <li>Crypto</li>
-            </ul>
-          </article>
-          {/* Genetic Algorithms */}
-          <article
-            className="card"
-            tabIndex={0}
-            onClick$={() => {
-              popUpContentStore.isActive = true;
-              popUpContentStore.title = "Genetic Algorithm";
-              popUpContentStore.url = "";
-              popUpContentStore.date = "Summer 2022";
-              popUpContentStore.location = "France";
-              popUpContentStore.description =
-                "The one annoying thing with my crypto bot was that the parameters had to be found manually by blindly testing. I wanted to automate that part of the process as well, and that's how I got into genetic algorithms to iteratively learn by the process of natural selection. It's a fascinating subject and surprisingly easy to get started!";
-              popUpContentStore.imageSrc = "";
-              popUpContentStore.footnote =
-                "I don't really have a picture for this one as it's just a script";
-              popUpContentStore.scrollY = window.scrollY;
-            }}
-          >
-            <header className="card-header">
-              <p>Summer 2022</p>
-              <h2>Genetic Algorithm</h2>
-            </header>
-            <div className="card-author">
-              <div className="author-avatar">
-                <img src="/avatar.png" alt="avatar" />
-              </div>
-              <svg class="half-circle" viewBox="0 0 106 57">
-                <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-              </svg>
-              <div className="author-name">Frazic</div>
-            </div>
-            <ul className="tags">
-              <li>Python</li>
-              <li>ML</li>
-              <li>Genetics</li>
-            </ul>
-          </article>
-          {/* Test automation */}
-          <article
-            className="card"
-            tabIndex={0}
-            onClick$={() => {
-              popUpContentStore.isActive = true;
-              popUpContentStore.title = "Test Automation";
-              popUpContentStore.url = "";
-              popUpContentStore.date = "2018";
-              popUpContentStore.location = "France";
-              popUpContentStore.description =
-                "Whilst working for Naval Group, I was tasked with automating a lot of the repetitive regression tests for the ship's OS. This task was excellent for me as I thoroughly enjoy finding ways of having a computer do the work for me.";
-              popUpContentStore.imageSrc = "";
-              popUpContentStore.footnote = "No pictures allowed!";
-              popUpContentStore.scrollY = window.scrollY;
-            }}
-          >
-            <header className="card-header">
-              <p>2018</p>
-              <h2>Test Automation</h2>
-            </header>
-            <div className="card-author">
-              <div className="author-avatar">
-                <img src="/avatar.png" alt="avatar" />
-              </div>
-              <svg class="half-circle" viewBox="0 0 106 57">
-                <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-              </svg>
-              <div className="author-name">Frazic</div>
-            </div>
-            <ul className="tags">
-              <li>Testing</li>
-              <li>EggPlant</li>
-              <li>Automation</li>
-            </ul>
-          </article>
-          {/* Virtualisation */}
-          <article
-            className="card"
-            tabIndex={0}
-            onClick$={() => {
-              popUpContentStore.isActive = true;
-              popUpContentStore.title = "Virtualisation";
-              popUpContentStore.url = "";
-              popUpContentStore.date = "2019";
-              popUpContentStore.location = "France";
-              popUpContentStore.description =
-                "The machines used for testing at Naval Group were critical, yet getting older. My mission was to make them run virtually on a server in order to replace the physical simulation computers. This ensured backups, amongst other benefits!";
-              popUpContentStore.imageSrc = "";
-              popUpContentStore.footnote = "No pictures allowed!";
-              popUpContentStore.scrollY = window.scrollY;
-            }}
-          >
-            <header className="card-header">
-              <p>2019</p>
-              <h2>Virtualisation</h2>
-            </header>
-            <div className="card-author">
-              <div className="author-avatar">
-                <img src="/avatar.png" alt="avatar" />
-              </div>
-              <svg class="half-circle" viewBox="0 0 106 57">
-                <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-              </svg>
-              <div className="author-name">Frazic</div>
-            </div>
-            <ul className="tags">
-              <li>VMWare</li>
-              <li>Testing</li>
-              <li>Virtualisation</li>
             </ul>
           </article>
         </section>

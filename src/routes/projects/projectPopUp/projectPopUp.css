@@ -115,7 +115,7 @@
 .description-container > .description::before {
   content: open-quote;
   position: absolute;
-  top: -70px;
+  top: -0.5em;
   font-size: 7em;
   color: var(--color-green-light);
 }
